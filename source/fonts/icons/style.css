@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'icon-lanit';
+  src:  url('icon-lanit.eot?9cj7pf');
+  src:  url('icon-lanit.eot?9cj7pf#iefix') format('embedded-opentype'),
+    url('icon-lanit.ttf?9cj7pf') format('truetype'),
+    url('icon-lanit.woff?9cj7pf') format('woff'),
+    url('icon-lanit.svg?9cj7pf#icon-lanit') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon-lanit' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-basket:before {
+  content: "\e900";
+  color: #4689b9;
+}
+.icon-calendar:before {
+  content: "\e901";
+  color: #bdbfc5;
+}
+.icon-cardiogram:before {
+  content: "\e902";
+  color: #f24f4b;
+}
+.icon-doc:before {
+  content: "\e903";
+  color: #558dd5;
+}
+.icon-dumbbell:before {
+  content: "\e904";
+  color: #4689b9;
+}
+.icon-fishing:before {
+  content: "\e905";
+  color: #4689b9;
+}
+.icon-home:before {
+  content: "\e906";
+  color: #f24f4b;
+}
+.icon-jpg:before {
+  content: "\e907";
+  color: #ac28df;
+}
+.icon-palm:before {
+  content: "\e908";
+  color: #82c3df;
+}
+.icon-pdf:before {
+  content: "\e909";
+  color: #f06262;
+}
+.icon-phg:before {
+  content: "\e90a";
+  color: #f6be34;
+}
+.icon-xls:before {
+  content: "\e90b";
+  color: #2e932f;
+}
