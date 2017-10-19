@@ -4,16 +4,71 @@
 <body>
 
 	<div class="cb-wrapper">
-		<div class="cb-container">
-			<div class="cb-map">
-				<div class="cb-map__wrap">
-					<object id="map" type="image/svg+xml" data="../img/map/map.svg" width="100%" height="100%"></object>
+        <div class="cb-container">
+    		<div class="cb-row">
+    			<div class="cb-map">
+    				<div class="cb-map__wrap">
+                        @@include('./file-include/map.html')
+    				</div>
+    			</div>
+    			<h1 class="cb-title">Заголовок</h1>		
+    		</div>
 
+            <!-- опрос -->
+            <div class="cb-row">
+                <div class="cb-col">
+                    <div class="cb-interview-block">
+                        
+                        <ui class="cb-interview__list">
+                            
+                            <li class="cb-interview__elem">
+                                <div class="cb-interview__icon">
+                                    <i class="icon-palm"></i>
+                                </div>
+                                <input id="cb-interview__checkbox" type="checkbox" class="cb-interview__checkbox">
+                                <label for="cb-interview__checkbox">Хочу на море</label>
+                            </li>
 
-				</div>
-			</div>
-			<h1 class="cb-title">Заголовок</h1>		
-		</div>
+                            <li class="cb-interview__elem">
+                                <div class="cb-interview__icon">
+                                    <i class="icon-fishing"></i>
+                                </div>
+                                <input id="cb-interview__checkbox" type="checkbox" class="cb-interview__checkbox">
+                                <label for="cb-interview__checkbox">Люблю рыбалку</label>
+                            </li>
+
+                            <li class="cb-interview__elem">
+                                <div class="cb-interview__icon">
+                                    <i class="icon-basket"></i>
+                                </div>
+                                <input id="cb-interview__checkbox" type="checkbox" class="cb-interview__checkbox">
+                                <label for="cb-interview__checkbox">Хожу за грибами и ягодами</label>
+                            </li>
+
+                            <li class="cb-interview__elem">
+                                <div class="cb-interview__icon">
+                                    <i class="icon-dumbbell"></i>
+                                </div>
+                                <input id="cb-interview__checkbox" type="checkbox" class="cb-interview__checkbox">
+                                <label for="cb-interview__checkbox">Надо подкачаться</label>
+                            </li>
+
+                            <li class="cb-interview__elem">
+                                <div class="cb-interview__icon">
+                                    <i class="icon-cardiogram"></i>
+                                </div>
+                                <input id="cb-interview__checkbox" type="checkbox" class="cb-interview__checkbox">
+                                <label for="cb-interview__checkbox">Поправить здоровье</label>
+                            </li>
+
+                        </ui>
+
+                    </div> 
+                </div>
+
+                <div class="cb-col"></div>
+            </div>
+        </div>
 	</div>
 
 </body>
