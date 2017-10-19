@@ -1,0 +1,51 @@
+.cb-calendar {
+	display: inline-block;
+	padding-right: @sp;
+	margin-bottom: @sp/3;
+	float: left;
+	
+	&__btn {
+		border: solid 1px @gray;
+		object-fit: contain;
+		padding: 2px;
+		height: 38px;
+		
+		&:hover {
+			.cb-calendar {
+				&__text {
+					color: lighten(@blue, 20%);
+				}
+			}
+			
+		}
+
+	}
+
+	&__arrow {
+		display: inline-block;	
+		height: 100%;
+		color: @gray;
+		padding:7px 5px;
+		
+		&_left {
+			border-right: 1px solid @gray;
+		}
+
+		&_right {
+			border-left: 1px solid @gray;
+		}
+	}
+
+	&__text {
+		display: inline-block;
+		width: 175px;	
+		font-family: Arial;
+		font-size: 14px;
+		line-height: 1.57;
+		text-align: center;
+		padding: 0 @sp*2;	
+		color: @blue;
+		
+
+	}
+}

@@ -4,19 +4,18 @@
 <body>
 
 	<div class="cb-wrapper">
-        <div class="cb-container">
-    		<div class="cb-row">
-    			<div class="cb-map">
-    				<div class="cb-map__wrap">
-                        @@include('./file-include/map.html')
-    				</div>
-    			</div>
-    			<h1 class="cb-title">Заголовок</h1>		
-    		</div>
 
+
+    	<div class="cb-map">
+    		<div class="cb-map__wrap">
+                        @@include('./file-include/map.html')
+    		</div>
+    	</div>
+
+        <div class="cb-container">
             <!-- опрос -->
             <div class="cb-row">
-                <div class="cb-col">
+                <div class="cb-col cb-col-9">
                     <div class="cb-interview-block">
                         
                         <ui class="cb-interview__list">
@@ -25,40 +24,44 @@
                                 <div class="cb-interview__icon">
                                     <i class="icon-palm"></i>
                                 </div>
-                                <input id="cb-interview__checkbox" type="checkbox" class="cb-interview__checkbox">
-                                <label for="cb-interview__checkbox">Хочу на море</label>
+                                <input id="cb-interview__checkbox-1" type="checkbox" class="cb-interview__checkbox">
+                                <label for="cb-interview__checkbox-1">Хочу на море</label>
                             </li>
 
                             <li class="cb-interview__elem">
                                 <div class="cb-interview__icon">
                                     <i class="icon-fishing"></i>
                                 </div>
-                                <input id="cb-interview__checkbox" type="checkbox" class="cb-interview__checkbox">
-                                <label for="cb-interview__checkbox">Люблю рыбалку</label>
+                                <input id="cb-interview__checkbox-2" type="checkbox" class="cb-interview__checkbox">
+                                <label for="cb-interview__checkbox-2">Люблю рыбалку</label>
                             </li>
 
                             <li class="cb-interview__elem">
                                 <div class="cb-interview__icon">
                                     <i class="icon-basket"></i>
                                 </div>
-                                <input id="cb-interview__checkbox" type="checkbox" class="cb-interview__checkbox">
-                                <label for="cb-interview__checkbox">Хожу за грибами и ягодами</label>
+                                <input id="cb-interview__checkbox-3" type="checkbox" class="cb-interview__checkbox">
+                                <label for="cb-interview__checkbox-3">Хожу за грибами и ягодами</label>
                             </li>
 
                             <li class="cb-interview__elem">
                                 <div class="cb-interview__icon">
                                     <i class="icon-dumbbell"></i>
                                 </div>
-                                <input id="cb-interview__checkbox" type="checkbox" class="cb-interview__checkbox">
-                                <label for="cb-interview__checkbox">Надо подкачаться</label>
+                                <input id="cb-interview__checkbox-4" type="checkbox" class="cb-interview__checkbox">
+                                <label for="cb-interview__checkbox-4">Надо подкачаться</label>
                             </li>
 
-                            <li class="cb-interview__elem">
+                            <li class="cb-interview__elem cb-interview__elem_red">
                                 <div class="cb-interview__icon">
                                     <i class="icon-cardiogram"></i>
                                 </div>
-                                <input id="cb-interview__checkbox" type="checkbox" class="cb-interview__checkbox">
-                                <label for="cb-interview__checkbox">Поправить здоровье</label>
+                                <input id="cb-interview__checkbox-5" type="checkbox" class="cb-interview__checkbox">
+                                <label for="cb-interview__checkbox-5">Поправить здоровье</label>
+                            </li>
+
+                            <li class="cb-interview__elem">
+                                <a href="#" class="btn">Выбрать всё</a>
                             </li>
 
                         </ui>
@@ -66,11 +69,203 @@
                     </div> 
                 </div>
 
-                <div class="cb-col"></div>
+                <div class="cb-col cb-col-3">
+                    <div class="btn-block">
+                        <a href="#" class="btn btn_red">Карта</a>
+                        <a href="#" class="btn btn_transparent">Список</a>
+                    </div>
+                </div>
             </div>
+            <!-- опрос конец -->
+
+            <!-- Горячие путевки -->
+            <div class="cb-row">
+                <div class="cb-col cb-col-4">
+                    <h1 class="cb-title cb-title_blue cb-title_mb-0">Горящие путёвки <span>58</span></h1>
+                    <a href="#" class="btn btn_mb-0">Подписаться</a>
+                </div>
+            </div>
+            <div class="cb-row">
+                <div class="cb-col cb-col-4">
+ 
+
+                    <div class="cb-vouchers">  
+                        <ui class="cb-vouchers__list"> 
+                            <li class="cb-vouchers__elem"> 
+                                <a href="#" class="cb-vouchers__link">
+                                    <span class="cb-vouchers__text">Балтийские пески</span>
+                                    <span class="cb-vouchers__count">2</span>
+                                </a>
+                            </li>
+                            <li class="cb-vouchers__elem"> 
+                                <a href="#" class="cb-vouchers__link">
+                                    <span class="cb-vouchers__text">Березовая роща</span>
+                                    <span class="cb-vouchers__count">245754</span>
+                                </a>
+                            </li>
+
+                            <li class="cb-vouchers__elem"> 
+                                <a href="#" class="cb-vouchers__link">
+                                    <span class="cb-vouchers__text">Бриз</span>
+                                    <span class="cb-vouchers__count">245754</span>
+                                </a>
+                            </li>
+
+                            <li class="cb-vouchers__elem"> 
+                                <a href="#" class="cb-vouchers__link">
+                                    <span class="cb-vouchers__text">Зеленый бор</span>
+                                    <span class="cb-vouchers__count">4</span>
+                                </a>
+                            </li>
+
+                           <li class="cb-vouchers__elem"> 
+                                <a href="#" class="cb-vouchers__link">
+                                    <span class="cb-vouchers__text">Зеленый бор</span>
+                                    <span class="cb-vouchers__count">4</span>
+                                </a>
+                            </li>
+
+                           <li class="cb-vouchers__elem"> 
+                                <a href="#" class="cb-vouchers__link">
+                                    <span class="cb-vouchers__text">Им. 50-летие Октября</span>
+                                    <span class="cb-vouchers__count">4</span>
+                                </a>
+                            </li>
+
+                           <li class="cb-vouchers__elem"> 
+                                <a href="#" class="cb-vouchers__link">
+                                    <span class="cb-vouchers__text">Зеленый бор</span>
+                                    <span class="cb-vouchers__count">4</span>
+                                </a>
+                            </li>
+
+                           <li class="cb-vouchers__elem"> 
+                                <a href="#" class="cb-vouchers__link">
+                                    <span class="cb-vouchers__text">Зеленый бор</span>
+                                    <span class="cb-vouchers__count">4</span>
+                                </a>
+                            </li>
+
+                           <li class="cb-vouchers__elem"> 
+                                <a href="#" class="cb-vouchers__link">
+                                    <span class="cb-vouchers__text">Зеленый бор</span>
+                                    <span class="cb-vouchers__count">4</span>
+                                </a>
+                            </li> 
+
+
+                            <li class="cb-vouchers__elem"> 
+                                <a href="#" class="cb-vouchers__link">
+                                    <span class="cb-vouchers__text">Балтийские пески</span>
+                                    <span class="cb-vouchers__count">2</span>
+                                </a>
+                            </li>
+                            <li class="cb-vouchers__elem"> 
+                                <a href="#" class="cb-vouchers__link">
+                                    <span class="cb-vouchers__text">Березовая роща</span>
+                                    <span class="cb-vouchers__count">245754</span>
+                                </a>
+                            </li>
+
+                            <li class="cb-vouchers__elem"> 
+                                <a href="#" class="cb-vouchers__link">
+                                    <span class="cb-vouchers__text">Бриз</span>
+                                    <span class="cb-vouchers__count">245754</span>
+                                </a>
+                            </li>
+
+                            <li class="cb-vouchers__elem"> 
+                                <a href="#" class="cb-vouchers__link">
+                                    <span class="cb-vouchers__text">Зеленый бор</span>
+                                    <span class="cb-vouchers__count">4</span>
+                                </a>
+                            </li>
+
+                           <li class="cb-vouchers__elem"> 
+                                <a href="#" class="cb-vouchers__link">
+                                    <span class="cb-vouchers__text">Зеленый бор</span>
+                                    <span class="cb-vouchers__count">4</span>
+                                </a>
+                            </li>
+
+                           <li class="cb-vouchers__elem"> 
+                                <a href="#" class="cb-vouchers__link">
+                                    <span class="cb-vouchers__text">Им. 50-летие Октября</span>
+                                    <span class="cb-vouchers__count">4</span>
+                                </a>
+                            </li>
+
+                           <li class="cb-vouchers__elem"> 
+                                <a href="#" class="cb-vouchers__link">
+                                    <span class="cb-vouchers__text">Зеленый бор</span>
+                                    <span class="cb-vouchers__count">4</span>
+                                </a>
+                            </li>
+
+                           <li class="cb-vouchers__elem"> 
+                                <a href="#" class="cb-vouchers__link">
+                                    <span class="cb-vouchers__text">Зеленый бор</span>
+                                    <span class="cb-vouchers__count">4</span>
+                                </a>
+                            </li>
+
+                           <li class="cb-vouchers__elem"> 
+                                <a href="#" class="cb-vouchers__link">
+                                    <span class="cb-vouchers__text">Зеленый бор</span>
+                                    <span class="cb-vouchers__count">4</span>
+                                </a>
+                            </li> 
+                        </ui>
+                    </div>
+                </div>
+
+                <div class="cb-col cb-col-8">
+                    <div class="cb-block">
+                        <h1 class="cb-title">Найти свободные места</h1>
+                        <div class="clearfix">
+                            <div class="cb-select">
+                                <select class="cb-select__btn">
+                                        <option>Выбрать место</option>
+                                        <option>Выбрать место 1</option>
+                                        <option>Выбрать место 2</option>
+                                </select> 
+                            </div>
+                            
+                            <div class="cb-calendar">
+                                <div class="cb-calendar__btn"> 
+                                    <span class="cb-calendar__arrow cb-calendar__arrow_left">
+                                        <i class="mdi mdi-chevron-left"></i>
+                                    </span>
+                                    <span class="cb-calendar__text">
+                                        Дата заезда
+                                    </span>
+                                    <span class="cb-calendar__arrow cb-calendar__arrow_right">
+                                        <i class="mdi mdi-chevron-right"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="cb-calendar">
+                                <div class="cb-calendar__btn"> 
+                                    <span class="cb-calendar__arrow cb-calendar__arrow_left">
+                                        <i class="mdi mdi-chevron-left"></i>
+                                    </span>
+                                    <span class="cb-calendar__text">
+                                        Дата выезда
+                                    </span>
+                                    <span class="cb-calendar__arrow cb-calendar__arrow_right">
+                                        <i class="mdi mdi-chevron-right"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <a href="#" class="btn btn_blue">Проверить</a>
+                        </div>
+                    </div>
+            </div>
+            <!-- Горячие путевки конец-->
         </div>
 	</div>
 
 </body>
 </html>
-

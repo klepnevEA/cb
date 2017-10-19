@@ -1,0 +1,38 @@
+.cb-select {
+	position: relative;
+	display: inline-block;
+	background-color: #fff;	
+	margin-right: @sp;
+	margin-bottom: @sp/3;
+	
+	float: left;
+	&__btn {
+	   position: relative;
+	   overflow: hidden;
+	   width: 320px;
+	  -moz-appearance:none;
+	  -o-appearance:none;
+	   appearance:none; 
+	   background-color: transparent;
+	   border: solid 1px @gray;
+	   padding: 10px 65px 10px 15px;
+	   color: @blue;
+	   font-family: Arial;
+	   font-size: 14px;
+	   cursor: pointer;
+	   
+		&:hover {
+			color: lighten(@blue, 20%);
+		}
+	   
+	}
+
+	&:before {
+		content: '\f140';
+		position: absolute;	
+		font-family: "Material Design Icons";
+		top: 9px;
+		right: 10px;
+		color: @gray;
+	}
+}

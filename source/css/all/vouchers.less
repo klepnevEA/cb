@@ -1,0 +1,38 @@
+.cb-vouchers {
+	padding-left: @sp*2;
+	margin-top:@sp;
+	margin-bottom: 75px;
+	.clearfix;
+	
+	&__elem {
+		display: inline-block;
+		width: 50%;
+		float: left;
+		font-family: Arial;
+		font-size: 17px;
+		line-height: 1.65;
+		text-align: left;
+	}
+
+	&__link {
+		color: @blue;
+		
+		&:hover {
+			color: lighten(@blue, 20%);
+		}
+	}
+
+	&__text {
+		display: inline-block;	
+		float: left;
+		max-width: 	90%;
+		margin-right: @sp/3;	
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	&__count {
+		color: @black;
+	}
+}

@@ -1,8 +1,10 @@
 .btn {
+	display: inline-block;	
 	font-family: Arial;
 	font-size: 14px;
 	text-align: center;
-	color: @blue;	
+	color: @blue;
+	line-height: 1.57;	
 	padding: 9px 20px;
 	margin-bottom: @sp/3;
 	border-radius: 20px;
@@ -10,6 +12,7 @@
 	border: solid 1px @gray;
 	cursor: pointer;
 	transition: 0.5s;
+	
 	
 	&:hover {
 		background-color: darken(@bg-color, 10%);
@@ -33,5 +36,28 @@
 		&:hover {
 			background-color: darken(@red, 20%);
 		}
+	}
+
+	&_transparent {
+		border: 1px solid transparent;
+		background-color: transparent;
+		color: @black;
+	}
+
+	&-block {
+		display: inline-block;
+		padding: 3px;
+		background-color: #fff;
+		border: solid 1px @gray;
+		border-radius: 30px;
+		float: right;
+		
+		.btn {
+			margin-bottom: 0;
+		}
+	}
+
+	&_mb-0 {
+		margin-bottom: 0;
 	}
 }
