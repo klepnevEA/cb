@@ -1,35 +1,35 @@
 .cb-map {
-	position: relative;
-	width: 100%;
-	height: auto;
 
-	&-elem {
-		fill:#EAF2F5;
-		fill-rule:evenodd;
-		stroke:#BCCCD2; 
+
+	&__wrap {
+		position: relative;
+		width: 100%;
+		height: auto;
+		
 	}
 
+	&__city {
+		&-elem {
+			position: absolute;
+			z-index: 100;
+		}
+
+		&-link {
+			font-family: Arial;
+			font-size: 17px;
+			line-height: 1.65;
+			color: @blue;
+			
+			i {
+				font-size: 14px;
+			}
+			
+			&:hover {
+				color: lighten(@blue, 20%);
+			}
+		}
+	}
 }
 
-	// #cb-map-1 {
-	// 	cursor: pointer;
-	//   fill: red;
-	//   stroke: pink;
-	//   stroke-width: 1px;
-	//   stroke-dasharray: 125;
-	//   stroke-dashoffset: -125;
-	//   stroke-linecap: butt;
-	//   -webkit-transition: all 2s ease-out;
-	//   -moz-transition: all 2s ease-out;
-	//   -ms-transition: all 2s ease-out;
-	//   -o-transition: all 2s ease-out;
-	//   transition: all 2s ease-out;
-	// 	&:hover {
-	// 		stroke: #ff0;
-	// 	}
-	// }
 
-	// #map {
-		
-	// }
 

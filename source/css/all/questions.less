@@ -1,0 +1,59 @@
+.cb-questions {
+	margin-bottom: @sp*2;
+	min-height: 170px;
+	.clearfix;
+	
+	
+	&__block {
+		width: 50%;
+		float: left;
+	}
+
+	&__link {
+		display: inline-block;
+		font-family: Arial;
+		font-size: 17px;
+		line-height: 1.65;
+		color: @blue;
+		padding-right: @sp*2;
+		
+		.mdi {
+			transition: 0.3s;
+		}
+		
+		&:hover {
+			color: lighten(@blue, 20%);
+		}
+	}
+
+	&__text {
+		font-family: Arial;
+		font-size: 14px;
+		line-height: 1.57;
+		color: @black;
+		padding-right: @sp*2;
+		padding-left: @sp*2;
+		overflow: hidden;
+		max-height: 0px;
+		transition: 0.3s;
+	}
+
+	&__elem {
+		&.active {
+			.cb-questions {
+				&__text {
+					max-height: 65px;
+				}
+
+				&__link {
+					.mdi {
+						position: relative;
+						display: inline-block;
+						transform: rotate(90deg);
+					}
+					
+				}
+			}
+		}
+	}
+}
