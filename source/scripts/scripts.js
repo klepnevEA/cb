@@ -5,8 +5,14 @@ $(document).ready(function() {
 		e.preventDefault();
 		var thisEl = $(this),
 			thisClosest = thisEl.closest('.cb-questions__elem');
-			$('.cb-questions__elem').removeClass('active');
-			thisClosest.addClass('active');
+			if (!(thisClosest.hasClass('active'))) {
+				$('.cb-questions__elem').removeClass('active');
+				thisClosest.addClass('active');
+			} else {
+				$('.cb-questions__elem').removeClass('active');
+				thisClosest.removeClass('active');
+			}
+
 	});
 
 	// подсветка карты
@@ -21,6 +27,33 @@ $(document).ready(function() {
 	  });
 	}
 
+	// чекбоксы работают по тапу на иконки
+
+	$('.cb-interview__icon').on('click', function(e) {
+		e.preventDefault();
+		var thisEl = $(this),
+			thisClosest = thisEl.closest('.cb-interview__elem'),
+			thisChildCekbox = thisClosest.find('.cb-interview__checkbox');
+
+			if(thisChildCekbox.prop("checked")) {  
+	            thisChildCekbox.prop('checked', false);
+	        } else {
+	            thisChildCekbox.prop('checked', true);
+	        }
+	});
+
+
+	// чекбокс карты
+
+	$('.btn_transparent').on('click', function(e) {
+		e.preventDefault();
+		e.stopPropagation();
+		var thisEl = $(this);
+
+
+		$('.btn-block-checkbox__check').css('left', thisEl.position().left);
+		$('.btn-block-checkbox__check').css('width', thisEl.css('width'));
+	});
 	
 }); 
 
