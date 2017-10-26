@@ -11,40 +11,43 @@
 		cursor: pointer;
 		text-align: left;
 		
-		.btn {
+		
+		.cb-btn {
 			display: inline-block;
 			margin: 0 auto;
 			width: 125px;
 			margin-top: 50px;
+			
+
 		}
 		
 		&:hover {
 			.cb-interview {
 				&__icon {
 					i:before {
-						color: lighten(@blue, 20%);
+						color: @blue-h;
 					}
 					
 				}
 
 				&__checkbox[type=checkbox] + label {
-					color: lighten(@blue, 20%);
+					color: @blue-h;
 				}
 			}
 
 			
 		}
 
-		&_red {
+		&.active{
 			.cb-interview {
 				&__icon {
 					i:before {
-						color: @red;
+						color: black;
 					}
 				}
 
 				&__checkbox[type=checkbox] + label {
-					color: @red;
+					color: black;
 				}
 			}
 
@@ -52,13 +55,13 @@
 				.cb-interview {
 					&__icon {
 						i:before {
-							color: lighten(@red, 20%);
+							color: lighten(black, 20%);
 						}
 						
 					}
 
 					&__checkbox[type=checkbox] + label {
-						color: lighten(@red, 20%);
+						color: lighten(black, 20%);
 					}	
 				}
 			} 
@@ -67,10 +70,11 @@
 
 	&__icon {
 		margin-bottom: 10px;
-
+		transition: all 0.2s;
 		i:before {
 			color: @blue;
-			font-size: 77px;	
+			font-size: 77px;
+			transition: all 0.2s;
 		}
 	}
 
@@ -104,7 +108,8 @@
 	}
 
 	&__checkbox[type=checkbox]:checked + label:before {
-	    background-image: url('../img/checkbox.png');
+		background-image: url('../img/checkbox.png');
+		
 	}
 
 	&__checkbox[type=checkbox] + label {
@@ -116,7 +121,7 @@
 		line-height: 1.4;
 		color: @blue;
 		cursor: pointer;
-	  	max-width: 115px;
+		max-width: 115px;
+		transition: all 0.2s;
 	}
-				
 }
