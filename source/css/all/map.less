@@ -1,12 +1,20 @@
 .cb-map {
-
+position: relative;
 
 	&__wrap {
 		position: relative;
 		width: 100%;
 		height: auto;
+		margin-top: -8px;
+
+		svg {
+			width: 100%;
+			height: auto;
+		}
 		
 	}
+
+
 
 	&__city {
 		&-elem {
@@ -29,6 +37,47 @@
 			}
 		}
 	}
+	&__r1 {
+		
+		width: 98%;
+		padding-bottom: 47.1%;
+		background: url(../img/map/map-r6.svg) no-repeat;
+		background-size: 100% auto;
+		background-position: 0 -2px; 
+	}
+	&__header {
+		height: 50px;
+		position: absolute; 
+		left: 40px;
+		right: 40px;
+		top: 50px;
+		z-index: 100;
+		border-bottom: solid 1px #dcdcdc; 
+	}
+		&__title {
+			  font-family: Arial;
+			  font-size: 31px;
+			  font-weight: bold;
+			  line-height: 1;
+			  text-align: left;
+			  color: #363b49;
+			  display: inline-block;
+			  margin-right: 50px;
+		}
+		&__link {
+			font-family: Arial;
+			font-size: 14px;
+			line-height: 1;
+			text-align: left;
+			color: #262e47;
+			color: @blue;
+			margin-right: 30px;
+			&.active {
+				color: #262e47;
+				border-bottom: 1px solid #262e47;
+				padding-bottom: 20px;
+			}
+		}
 }
 
 

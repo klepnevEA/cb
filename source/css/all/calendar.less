@@ -1,56 +1,38 @@
 .cb-calendar {
-	display: inline-block;
-	padding-right: @sp;
-	margin-bottom: @sp/3;
+	width: 100%;
+	max-width: 250px;
 	float: left;
-	width: 25%;
-	
-	&__btn {
-		border: solid 1px @gray;
-		object-fit: contain;
-		padding: 3px;
-		height: 41px;
-		white-space: nowrap;
-		text-align: center;
-		
-		&:hover {
-			.cb-calendar {
-				&__text {
-					color: lighten(@blue, 20%);
-				}
-			}
-			
-		}
-
+	margin-right: 30px;
+	position: relative;
+	display: table-cell;
+	margin-bottom: 10px;
+	&__input {
+		position: relative;
+		    border: 2px solid #dedfe2;
+		    cursor: pointer;
+		    background: #fff;
+		    border-radius: 4px;
+		    width: 100%;
+		    font-size: 14px;
+		    display: block;
+		    line-height: 1;
+		    color: @blue;
+		    padding: 0 12px 0 110px;
+		    height: 40px;
 	}
-
-	&__arrow {
-		display: inline-block;	
-		height: 100%;
-		color: @gray;
-		padding:7px 5px;
-		
-		&_left {
-			float: left;
-			border-right: 1px solid @gray;
-		}
-
-		&_right {
-			float: right;
-			border-left: 1px solid @gray;
-		}
-	}
-
 	&__text {
-		display: inline-block;
-
-		font-family: Arial;
+		position: absolute;
+		z-index: 1;
 		font-size: 14px;
-		line-height: 1.57;
-		text-align: center;
-		padding-top: 7px;
-		color: @blue;
-		
-
+		color: #363b49;
+		top: 12px;
+		left: 16px;
 	}
+	&__btn {
+		margin-bottom: 10px;
+		display: table-cell;
+		    float: left;
+	}
+	
+
 }

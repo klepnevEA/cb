@@ -1,10 +1,25 @@
 .cb-advertising {
+	position: relative;
+	padding: 0 40px 55px;
+	.clearfix;
+
+	.cb-btn {
+		position: absolute;
+		top: 0;
+		right: 40px;
+	}
+	.cb-title {
+		font-size: 21px;
+		color: @blue;
+		display: block;
+		margin-bottom: 35px;
+	}
 	&__date {
 		font-family: Arial;
 		font-size: 14px;
 		line-height: 1.57;
-		color: @black;
-		margin-bottom: 25px;
+		color: #bdbfc5;
+		margin-bottom: 15px;
 		
 		i {
 			position: relative;
@@ -15,11 +30,25 @@
 		}
 		
 		&-add {
-			color: @blue;
-			float: right;
-			
-			&:hover {
-				color: lighten(@blue, 20%);
+			color: black;
+			display: block;
+			font-size: 14px;
+			margin-left: -3px;
+			margin-top: 15px;
+				i {
+					margin-right: 3px;
+				}
+		}
+		&-text {
+			color: #bdbfc5;
+		}
+	}
+	&__item {
+		padding: 0 15px;
+		display: block;
+		&:hover {
+			.cb-advertising__text {
+				color: @blue;
 			}
 		}
 	}
@@ -31,35 +60,21 @@
 		line-height: 1.57;
 		text-align: left;
 		color: @black;
-		max-height: 65px;
+		height: 105px;
 		overflow: hidden;
+		transition: all 0.2s;
 		
 		&-more {
-			display: inline-block;
+			
 			position: absolute;
-			padding: 2px 10px;
+			width: 80px;
+			height: 22px;
 			right: 0;
 			bottom: 0;
-			background-color: #fff;
-			color: @blue;
-			
-			&:before {
-				content: "";
-				position: absolute;
-				top: 0;
-				left: -30px;
-				width: 30px;
-				height: 100%;
-				background: -moz-linear-gradient(left, rgba(255,255,255,0) 1%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
-				background: -webkit-linear-gradient(left, rgba(255,255,255,0) 1%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
-				background: linear-gradient(to right, rgba(255,255,255,0) 1%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
-								
-			}
-			
-			&:hover {
-				color: lighten(@blue, 20%);
-			}
-		}	
+			background: -moz-linear-gradient(left, rgba(242,243,243,0) 1%, rgba(242,243,243,1) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(left, rgba(242,243,243,0) 1%,rgba(242,243,243,1) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to right, rgba(242,243,243,0) 1%,rgba(242,243,243,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#f2f3f3',GradientType=1 ); /* IE6-9 */
+		}
 	}
 }

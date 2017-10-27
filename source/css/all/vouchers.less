@@ -1,35 +1,66 @@
 .cb-vouchers {
-	padding-left: @sp*2;
-	margin-top:@sp;
+	padding: 40px 45px;
 	margin-bottom: 75px;
+	background: white;
+	border-radius: 4px;
+	position: relative;
+	min-height: 259px;
 	.clearfix;
 	
+	.cb-btn {
+		position: absolute;
+		top: 34px;
+		right: 40px;
+	}
+	.cb-title {
+		font-size: 21px;
+		color: @blue;
+		.clearfix;
+		span {
+			color: black;
+		}
+	}
+
+	&__list {
+		.clearfix;
+	}
 	&__elem {
 		display: inline-block;
-		width: 50%;
+		width: 33%;
 		float: left;
 		font-family: Arial;
-		font-size: 17px;
-		line-height: 1.65;
+		font-size: 14px;
+		line-height: 1.6;
 		text-align: left;
+		&:hover {
+			.cb-vouchers__text {
+				text-decoration: underline ;
+			}
+			
+		}
+		&.disabled {
+			.cb-vouchers__text {
+				color: #bec0c6;
+			}
+			.cb-vouchers__count {
+				display: none;
+			}
+		}
 	}
 
 	&__link {
 		color: @blue;
-		
-		&:hover {
-			color: lighten(@blue, 20%);
-		}
 	}
 
 	&__text {
-		display: inline-block;	
+		display: inline-block;
 		float: left;
 		max-width: 	90%;
-		margin-right: @sp/3;	
+		margin-right: @sp/3;
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
+
 	}
 
 	&__count {

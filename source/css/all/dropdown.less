@@ -1,0 +1,218 @@
+/* --- EASYcb-dropdown DEFAULT THEME --- */
+
+/* PREFIXED CSS */
+
+// .cb-dropdown,
+// .cb-dropdown div,
+// .cb-dropdown li,
+// .cb-dropdown div::after{
+// 	-webkit-transition: all 150ms ease-in-out;
+// 	-moz-transition: all 150ms ease-in-out;
+// 	-ms-transition: all 150ms ease-in-out;
+// 	transition: all 150ms ease-in-out;
+
+
+// }
+
+.cb-dropdown .selected::after,
+.cb-dropdown.scrollable div::after{
+	-webkit-pointer-events: none;
+	-moz-pointer-events: none;
+	-ms-pointer-events: none;
+	pointer-events: none;
+}
+
+/* WRAPPER */
+
+.cb-dropdown{
+	position: relative;
+	border: 2px solid #dedfe2;
+	cursor: pointer;
+	background: #fff;
+	border-radius: 4px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	width: 100%;
+	font-size: 14px;
+	box-sizing: border-box;
+	height: 40px;
+}
+
+.cb-dropdown.open{
+	z-index: 20;
+}
+
+.cb-dropdown:hover{
+	
+}
+
+.cb-dropdown.focus{
+	// box-shadow: 0 0 5px rgba(51,102,248,.4);
+}
+
+/* CARAT */
+
+.cb-dropdown .carat{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	box-sizing: border-box;
+	&:before {
+		content: '\F140';
+		font-family: "Material Design Icons";
+		display: block;
+		transition: all 0.2s;
+		font-size: 16px;
+	}
+}
+
+.cb-dropdown.open .carat{
+
+	&:before {
+		transform: rotate(180deg);
+
+	}
+}
+
+.cb-dropdown.disabled .carat{
+	border-top-color: #999;
+}
+
+/* OLD SELECT (HIDDEN) */
+
+.cb-dropdown .old{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+}
+
+.cb-dropdown select{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.cb-dropdown.touch .old{
+	width: 100%;
+	height: 100%;
+}
+
+.cb-dropdown.touch select{
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+/* SELECTED FEEDBACK ITEM */ 
+
+.cb-dropdown .selected,
+.cb-dropdown li{
+	display: block;
+	line-height: 1;
+	color: #000;
+	padding: 11px 12px;
+	overflow: hidden;
+	white-space: nowrap;
+	height: 36px;
+}
+
+.cb-dropdown.disabled .selected{
+	color: #999;
+}
+
+.cb-dropdown .selected::after{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 60px;
+	
+	border-radius: 0 2px 2px 0;
+	box-shadow: inset -55px 0 25px -20px #fff;
+}
+
+/* DROP DOWN WRAPPER */
+
+.cb-dropdown div{
+	position: absolute;
+	height: 0;
+	left: -2px;
+	right: -2px;
+	top: 100%;
+	margin-top: -1px;
+	background: #fff;
+	border: 2px solid #dedfe2;;
+	border-top: 1px solid #eee;
+	border-radius: 0 0 3px 3px;
+	overflow: hidden;
+	opacity: 0;
+}
+
+/* Height is adjusted by JS on open */
+
+.cb-dropdown.open div{
+	opacity: 1;
+	z-index: 2;
+}
+
+/* FADE OVERLAY FOR SCROLLING LISTS */
+
+.cb-dropdown.scrollable div::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 50px;
+	
+	box-shadow: inset 0 -50px 30px -35px #fff;
+}
+
+.cb-dropdown.scrollable.bottom div::after{
+	opacity: 0;
+}
+
+/* DROP DOWN LIST */
+
+.cb-dropdown ul{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	list-style: none;
+	overflow: hidden;
+}
+
+.cb-dropdown.scrollable.open ul{
+	overflow-y: auto;
+}
+
+/* DROP DOWN LIST ITEMS */
+
+.cb-dropdown li{
+	list-style: none;
+	display: block;
+}
+
+/* .focus class is also added on hover */
+
+.cb-dropdown li.focus{
+	background: @bg-color;
+	position: relative;
+	z-index: 3;
+	color: black;
+}
+
+.cb-dropdown li.active{
+	font-weight: 700;
+}

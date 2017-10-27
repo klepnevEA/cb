@@ -1,29 +1,34 @@
 .cb-questions {
-	margin-bottom: @sp*2;
 	min-height: 170px;
+	background: white;
+	padding: 60px 40px 30px;
 	.clearfix;
 	
+	.cb-title {
+	    font-size: 21px;
+	    color: black;
+	    margin-bottom: 30px;
+	}
 	
-	&__block {
-		width: 50%;
-		float: left;
+	&__list {
+		margin-bottom: 30px;
+		.clearfix;
 	}
 
+
 	&__link {
-		display: inline-block;
+		display:block;
 		font-family: Arial;
 		font-size: 17px;
 		line-height: 1.65;
 		color: @blue;
 		padding-right: @sp*2;
+		cursor: pointer;
+		margin-bottom: 10px;
 		
 		.mdi {
 			transition: 0.3s;
-			margin-right: 10px;
-		}
-		
-		&:hover {
-			color: lighten(@blue, 20%);
+			margin-right: 5px;
 		}
 	}
 
@@ -33,17 +38,24 @@
 		line-height: 1.57;
 		color: @black;
 		padding-right: @sp*2;
-		padding-left: @sp*2;
-		overflow: hidden;
-		max-height: 0px;
+		padding-left: @sp*2 + 5px;
+		
 		transition: 0.3s;
+		display: none;
+		p {
+			margin-bottom: 20px;
+		}
+		
+		.clearfix;
 	}
 
 	&__elem {
+		.clearfix;
 		&.active {
 			.cb-questions {
 				&__text {
-					max-height: 65px;
+					margin-bottom: 30px;
+					display: block;
 				}
 
 				&__link {

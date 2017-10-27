@@ -29,23 +29,28 @@ $(document).ready(function() {
 
 	// чекбоксы работают по тапу на иконки
 
-	$('.cb-interview__icon').on('click', function(e) {
-		e.preventDefault();
-		var thisEl = $(this),
-			thisClosest = thisEl.closest('.cb-interview__elem'),
-			thisChildCekbox = thisClosest.find('.cb-interview__checkbox');
+	// $('.cb-interview__elem').on('click', function(e) {
+	// 	e.preventDefault();
+	// 	var thisEl = $(this),
+	// 		thisClosest = thisEl.closest('.cb-interview__elem'),
+	// 		thisChildCekbox = thisClosest.find('.cb-interview__checkbox');
 
-			if(thisChildCekbox.prop("checked")) {  
-	            thisChildCekbox.prop('checked', false);
-	           // $(this).parent('.cb-interview__elem').addClass('active');
-	        } else {
-	            thisChildCekbox.prop('checked', true);
-	            // $(this).parent('.cb-interview__elem').removeClass('active');
-	        }
-	});
+	// 		if(thisChildCekbox.prop("checked")) {  
+	//             thisChildCekbox.prop('checked', false);
+	//            // $(this).parent('.cb-interview__elem').addClass('active');
+	//         } else {
+	//             thisChildCekbox.prop('checked', true);
+	//             // $(this).parent('.cb-interview__elem').removeClass('active');
+	//         }
+	// });
 
-	$('.cb-interview__elem').click(function() {
+	$('.cb-interview__elem').click(function(e) {
+		var $cbx = $(this).find('.cb-interview__checkbox');
+
+		$cbx.prop("checked", !$cbx.prop("checked"));	
 		$(this).toggleClass('active');
+		
+		e.preventDefault();
 	});
 
 	// чекбокс карты
