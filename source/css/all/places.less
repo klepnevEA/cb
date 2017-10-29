@@ -1,0 +1,99 @@
+.cb-places {
+	padding-left: 40px;
+	&__elem {
+		.clearfix;
+		background-color: #fff;
+		margin-bottom: @sp;
+		height: 210px;
+		border-radius: 4px;
+	}
+
+	&__photo {
+		float: left;
+		width: 280px;
+		height: 210px;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+
+	&__info {
+		position: relative;
+		padding: 40px 40px 40px @sp*2;
+		float: left;
+		width: calc(~'100% - 280px');
+	}
+
+	&__title {
+		font-family: Arial;
+		font-size: 21px;
+		font-weight: bold;
+		line-height: 1.33;
+		color: @blue;
+		float: left;
+	}
+
+	&__rating {
+		position: relative;
+		top: @sp/3;
+		float: right;
+		.clearfix;
+		
+		&-number {
+			position: relative;
+			top: -2px;
+			font-family: Arial;
+			font-size: 14px;
+			line-height: 1.57;
+			color: @black;
+			float: right;
+		}
+	}
+
+	&__text {
+		font-family: Arial;
+		font-size: 14px;
+		max-height: 60px;
+		line-height: 1.57;
+		text-align: left;
+		color: @black;
+		margin-bottom: @sp;
+		width: calc(~'100% - 250px');
+		float: left;
+		overflow: hidden;
+	}
+
+	&__reviews {
+		font-family: Arial;
+		font-size: 14px;
+		line-height: 1.57;
+		color: @blue;
+		float: right;
+		
+		&:hover {
+			color: lighten(@blue, 20%);
+		}
+		
+	}
+
+	&__find {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+
+	&__tagging {
+		position: absolute;
+		top: 0;
+		right: 20px;
+		padding: 3px 10px;
+		font-size: 12px;
+		line-height: 1.58;
+		background-color: #FCE5CE;
+		color: @black;
+        border-radius: 0 0 4px 4px;
+        z-index:10;
+	}
+
+
+}
