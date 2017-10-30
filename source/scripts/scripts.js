@@ -75,6 +75,22 @@ $(document).ready(function() {
 		$(this).parent().addClass('active'); 
 
 	}); 
+
+	/*открытие попапа карты*/
+
+	$('.cb-map__city-link').on('click', function(e) {
+		e.preventDefault();
+
+		$('#cb-popup-places').addClass('active');
+		$('.cb-popup').addClass('active');
+	});
+
+	$('.cb-popup__close').on('click', function(e) {
+		e.preventDefault();
+
+		$('.cb-popup').removeClass('active');
+		$('.cb-popup__wrap').removeClass('active');
+	});
 	
 }); 
 
