@@ -1,14 +1,14 @@
 .cb-popup {
-	display: none;
+	display: block;
 	position: fixed;
-	top: 0;
+	top: -10000px;
 	left: 0;
 	width: 100vw;
 	height: 100vh;
 	z-index: 9000;
 	
 	&.active {
-		display: block;
+		top: 0px;
 	}
 	
 	&__bg {
@@ -27,20 +27,15 @@
 
 	&__wrap {
 		position: relative;
-		display: none;
+		display: inline-block;
 		width: 1130px;
 		margin: 0 auto;
 		background-color: #fff;
         border-radius: 4px;
         vertical-align: middle;
         text-align: left;
-        height: 390px;
-        overfliw: hidden;
+        overflow: hidden;
         box-sizing: border-box;
-        
-		&.active {
-			display: inline-block;
-		}
 	}
 
 	&__close {
@@ -49,9 +44,18 @@
 		right: 10px;
 		color: @black;
 		font-size: 28px;
+		z-index: 9900;
 		
 		&:hover {
 			color: lighten(@black, 20%);
+		}
+
+		&_white {
+			color: #fff;
+			
+			&:hover {
+				color: darken(#fff, 20%);
+			}
 		}
 	}
 
@@ -71,6 +75,10 @@
 			text-align: left;
 			color: @black;
 			margin-bottom: 25px;
+			
+			&_margin-bottom {
+				margin-bottom: @sp/3;
+			}
 		}
 	}
 
@@ -98,6 +106,7 @@
 	}
 
 	&-places {
+		height: 390px;
 		&__photo {
 			width: 520px;
 			height: 100%;
@@ -187,6 +196,25 @@
 					color: @blue;
 				}
 			}
+		}
+	}
+
+	&-fotorama {
+
+		&__info {
+			padding: 40px;
+	        box-sizing: border-box;
+		}
+
+		&__photo-total {
+			font-size: 17px;
+			line-height: 1.65;
+			color: @black;
+			margin-bottom: @sp;
+		}
+
+		.cb-popup__text {
+			margin-bottom: 0;
 		}
 	}
 

@@ -82,14 +82,34 @@ $(document).ready(function() {
 		e.preventDefault();
 
 		$('#cb-popup-places').addClass('active');
-		$('.cb-popup').addClass('active');
 	});
+
+	$('.cb-places__photo').on('click', function(e) {
+		e.preventDefault();
+
+		$('#cb-popup-fotorama').addClass('active');
+	});
+
+
+	
 
 	$('.cb-popup__close').on('click', function(e) {
 		e.preventDefault();
 
 		$('.cb-popup').removeClass('active');
-		$('.cb-popup__wrap').removeClass('active');
+	});
+
+
+
+	$('.fotorama').fotorama({
+	  width: '100%',
+	  height: '500px',
+	  ratio: 16/9,
+	  allowfullscreen: true,
+	  nav: 'thumbs',
+	  loop:true,
+	  cropToFit:true,
+	  arrows: true,
 	});
 	
 }); 
