@@ -1,0 +1,69 @@
+.cb-slider-main {
+	width: 100%;
+	height: 624px;
+	margin-bottom: @sp*2;
+	overflow: hidden;
+	
+	&__elem {
+		width: 100%;
+		height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+	}
+
+	.slick-prev,
+	.slick-next {
+		position: absolute;
+		left: -20px;
+		top: 53%;
+		transform: translate(0, -50%);
+		z-index: 100;
+		background-color: transparent;
+		color: transparent;
+		border: 0;
+		outline: none;
+		width: 75px;
+	    height: 75px;
+	    cursor: pointer;
+			&:after {
+				font-family: "Material Design Icons";
+				content: '\f141';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				font-size: 35px;
+				color: @black;
+				display: inline-block;
+			}
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: -20px;
+				left: -20px;
+				background-color: rgba(255,255,255,0.5);
+		        border-radius: 50%;
+		        width: 80px;
+		        height: 80px;
+			}
+	}
+
+	.slick-next {
+		right: -20px;
+		left: auto;
+		&:after {
+			content: '\f142';
+			
+		}
+
+		&:before {
+			left: auto;
+			right: -20px;
+		}
+
+
+	}
+}

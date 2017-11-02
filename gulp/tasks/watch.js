@@ -11,3 +11,4 @@ module.exports = function() {
     $.gulp.watch('./source/scripts/**/*.*', $.gulp.series('copy:scripts'));
   });
 };
+

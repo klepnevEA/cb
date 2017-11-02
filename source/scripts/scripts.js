@@ -111,6 +111,20 @@ $(document).ready(function() {
 	  cropToFit:true,
 	  arrows: true,
 	});
+
+	$(".cb-slider-main").slick({
+		dots: false,
+		arrows: true,
+		slidesToShow: 1,
+		slidesToScroll: 1
+	});
+
+	$(".cb-slider-small").slick({
+		dots: false,
+		arrows: true,
+		slidesToShow: 5,
+		slidesToScroll: 5
+	});
 	
 }); 
 

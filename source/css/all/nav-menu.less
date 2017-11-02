@@ -1,0 +1,38 @@
+.cb-nav-menu {
+	margin-bottom: @sp*2;
+	&__wrap {
+		border-left: solid 2px @gray;
+		padding-left: @sp*2;
+	}
+
+	&__link {
+		display: inline-block;
+		width: 100%;
+		font-size: 21px;
+		font-weight: bold;
+		line-height: 1.33;
+		color: @blue;
+		padding-bottom: 29px;
+		  
+		&:hover {
+			//color: lighten(@blue, 20%);
+			text-decoration: underline;
+		}
+
+	}
+
+	&__elem {
+		&.active {
+
+			.cb-nav-menu {
+				&__link {
+					color: @black;
+					cursor: default;
+					text-decoration: none;
+				}
+			}
+
+		}
+	}
+}
+

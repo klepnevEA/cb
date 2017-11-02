@@ -42,9 +42,12 @@
 		&-text {
 			color: #bdbfc5;
 		}
+
+		&_vouchers {
+			margin-bottom: 10px;
+		}
 	}
 	&__item {
-		padding: 0 15px;
 		display: block;
 		&:hover {
 			.cb-advertising__text {
@@ -85,7 +88,7 @@
 			&__text {
 				height: auto;
 				max-height: 105px;
-				margin-bottom: 20px;
+				margin-bottom: 35px;
 				
 				&-more {
 					background: -moz-linear-gradient(left, rgba(255,255,255,0) 1%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
@@ -100,5 +103,72 @@
 				margin-bottom: 35px;
 			}
 		}	
+	}
+
+	&__vouchers {
+		.clearfix;
+		margin-bottom: 35px;
+		
+		&-left {
+			float: left;
+			width: 50%;
+		}
+
+		&-right {
+			float: right;
+			width: 50%;
+			text-align: right;
+			
+			& .cb-stars-rating {
+				float: right;
+			}
+		}
+
+		&-title {
+			display: inline-block;
+			font-size: 17px;
+			color: @blue;
+			margin-bottom: @sp/3;
+			
+			&:hover {
+				//color: lighten(@blue, 20%);
+				text-decoration: underline;
+			}
+		}
+
+		&-place,
+		&-comment,
+		&-people {
+			font-size: 14px;
+			text-align: left;
+			color: @black;
+			margin-bottom: 10px;
+		}
+
+		&-people {
+			text-align: right;
+		}
+
+		&-rating {
+			.clearfix;
+			margin-bottom: @sp/3;
+			&-number {
+				float: right;
+				font-size: 17px;
+				line-height: 0.9;
+				color: @black;
+			}
+		}
+
+		&-link {
+			font-size: 14px;
+			line-height: 1.57;
+			text-align: right;
+			color: @blue;
+			
+			// &:hover {
+			// 	color: lighten(@blue, 20%);
+			// }
+		}
 	}
 }

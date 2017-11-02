@@ -1,0 +1,59 @@
+.cb-reviews {
+	&__header {
+		.clearfix;
+		margin-bottom: @sp;
+	}
+
+	&__photo {
+		float: left;
+		margin-right: @sp;
+		width: 50px;
+		height: 50px;
+        border-radius: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+	}
+
+	&__info {
+		float: left;
+		width: calc(~'100% - 65px');
+	}
+
+	&__name {
+		font-family: Arial;
+		font-size: 14px;
+		line-height: 1.57;
+		font-weight: bold;
+		margin-bottom: 8px;
+	}
+
+	&__position {
+		font-size: 14px;
+		line-height: 1.57;
+		text-align: left;
+		color: @gray;
+	}
+
+	&__text {
+		position: relative;
+		font-family: Arial;
+		font-size: 14px;
+		line-height: 1.57;
+		overflow: hidden;
+		max-height: 85px;
+		margin-bottom: @sp*2;
+		
+		&:after {
+			content: '';
+			position: absolute;
+			width: 80px;
+		    height: 22px;
+		    right: 0;
+		    bottom: 0;
+		    z-index: 10;
+		    background: linear-gradient(to right, rgba(255, 255, 255, 0) 1%, #ffffff 100%);
+		    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=1);
+		}
+	}
+}

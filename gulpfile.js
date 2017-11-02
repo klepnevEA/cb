@@ -29,7 +29,7 @@ $.gulp.task('default', $.gulp.series(
     'copy:dist',
     'copy:fonts',
     'copy:less',
-    'copy:ie9',
+    //'copy:ie9',
     'fileinclude',
     'copy:image',
     'copy:scripts'

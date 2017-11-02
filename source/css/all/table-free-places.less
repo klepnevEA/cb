@@ -1,0 +1,40 @@
+.cb-table-free-places {
+	width: 100%;
+
+
+	td {
+		padding-right: 25px;
+		width: 15%;
+		
+		&:first-child {
+			width: 20%;
+		}
+		
+		&:last-child {
+			width: 20%;
+		}
+	}
+
+	.cb-calendar  {
+		max-width: 1000px;
+		position: relative;
+		margin-right: 0;
+		margin-bottom: 0;
+		
+		&:after {
+			content: "\e902";
+			position: absolute;
+			top: 10px;
+			right: @sp;
+			font-size: 20px;
+			color: @gray;
+			font-family: 'icon-lanit'
+		}
+
+		&__input {
+			background-color: transparent;
+		}
+
+	}
+	
+}
