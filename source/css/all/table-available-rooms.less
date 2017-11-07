@@ -1,0 +1,85 @@
+.cb-table-available-rooms {
+	width: 100%;
+	border-collapse:collapse;
+	
+	.cb-btn {
+		min-width: 145px;
+	}
+	
+	td {
+		padding: 25px 20px 25px;
+		font-family: Arial;
+		font-size: 17px;
+		line-height: 1.65;
+		height: 100%;
+		color: @black;
+		white-space: nowrap;
+		
+		
+		img {
+			height: 12px;
+			margin-right: 3px;
+		}
+
+		&.cb-table-available-rooms__rows-gray {
+			background-color: transparent;
+			padding: 0;
+			height: 20px;
+		}
+	}
+	
+	&__head {
+		td {
+			padding: 25px 20px @sp;
+			font-size: 21px;
+			font-weight: bold;
+			line-height: 1.33;
+			color: @black;
+		}
+	}
+
+
+	&__rows-white {
+		background-color: #fff;
+		vertical-align: top;
+		
+		&_top {
+			td {
+				height: 10px;
+				padding: 0;
+				border-radius: 4px 4px 0 0;
+				background-color: #fff;
+			}
+		}
+
+		&_bottom {
+			td {
+				height: 10px;
+				padding: 0;
+				border-radius: 0 0 4px 4px;
+				background-color: #fff;
+			}
+		}
+	}
+
+	&__border-bottom {
+		border-bottom: 1px solid @gray;
+	}
+
+	&__border-right {
+		vertical-align: middle;
+		border-right: 1px solid @gray;
+	}
+
+	&__delimiter {
+		width: @sp;
+		padding: 0px 0px !important;
+	}
+
+	&__icons {
+		white-space: nowrap;
+		color: @gray;
+	}
+
+
+}

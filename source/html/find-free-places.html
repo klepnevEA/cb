@@ -1,0 +1,208 @@
+
+	@@include('./file-include/head.html')
+
+
+	<div class="cb-wrapper">
+ 
+        <!-- @@include('./file-include/header.html') -->
+    
+        <div class="cb-row cb-action-menu">
+            <div class="cb-action-menu__wrap">
+                <a href="#" class="cb-btn cb-btn_blue">Назад</a>
+                <ul class="cb-action-menu__list">
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="cb-row">  
+            <!--**************************************************************************
+            *****************************************Главный блок *************************
+            ******************************************************************************-->
+
+            <div class="cb-col cb-col-12">
+
+                    <!-- Найти свободные места -->
+                <div class="cb-container-block cb-container-block_mb-30">
+                    <h1 class="cb-title">Найти свободные места</h1>
+                    <table class="cb-table-free-places">
+                        <tr>
+                            <td>
+                                <div class="cb-free__dropdown">
+                                    <select tabindex="4" class="cb-dropdown">
+                                        <option value="" class="label" value="">Выбрать место</option>
+                                        <option value="1">Место  номер 1</option>
+                                        <option value="2">Место номер 2</option>
+                                        <option value="2">Место номрер 20</option>
+                                        <option value="2">Какое-то место </option>
+                                     </select>
+                                 </div>
+                            </td>
+                            <td>
+                                <div class="cb-calendar ">
+                                    <div class="cb-calendar__text">Дата заезда:</div>
+                                    <input type="text"
+                                        class="cb-calendar__input datepicker-here"
+                                       
+                                        data-multiple-dates-separator=", "
+                                        />
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cb-calendar ">
+                                    <div class="cb-calendar__text">Дата выезда:</div>
+                                    <input type="text"
+                                        class="cb-calendar__input datepicker-here"
+                                       
+                                        data-multiple-dates-separator=", "
+                                        />
+                                </div>
+                            </td>
+                            <td><a href="#" class="cb-btn cb-btn_blue">Проверить</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Найти свободные места конец-->
+                <!-- свободные номера-->
+                <table class="cb-table-available-rooms">
+                    <tr class="cb-table-available-rooms__head">
+                        <td>Тип номера</td>
+                        <td class="cb-table-available-rooms__delimiter"></td>
+                        <td>Категория номера</td>
+                        <td>Тип размещения</td>
+                        <td>Вмещает</td>
+                        <td>Вмещает</td>
+                        <td></td>
+                        <td class="cb-table-available-rooms__delimiter"></td>
+                    </tr>
+
+                    <!-- первый белый блок -->
+
+                    <tr class="cb-table-available-rooms__rows-white cb-table-available-rooms__rows-white_top">
+                        <td  colspan='8'></td>
+                    </tr>
+                    <tr class="cb-table-available-rooms__rows-white">
+                        <td class="cb-table-available-rooms__border-right" rowspan='2'>Двухместный</td>
+                        <td class="cb-table-available-rooms__delimiter"></td>
+                        <td class="cb-table-available-rooms__border-bottom">Базовый</td>
+                        <td class="cb-table-available-rooms__border-bottom">
+                            Двухместная кровать <img src="../img/bed-2.png" alt="Двухместная кровать"><br>
+                            + 1 дополнительное место
+                            <img src="../img/bed-1.png" alt="дополнительное место">
+                        </td>
+                        <td class="cb-table-available-rooms__border-bottom">
+                            2-3 человека 
+                            <div class="cb-table-available-rooms__icons">
+                                <i class="mdi mdi-account"></i><i class="mdi mdi-account"></i><i class="mdi mdi-account-plus"></i>
+                            </div>
+                        </td>
+                        <td class="cb-table-available-rooms__border-bottom">5 номеров</td>
+                        <td class="cb-table-available-rooms__border-bottom"><a href="#" class="cb-btn cb-btn_blue">Создать заявку</a></td>
+                        <td class="cb-table-available-rooms__delimiter"></td>
+                    </tr>
+                    <tr class="cb-table-available-rooms__rows-white">
+                        <td class="cb-table-available-rooms__delimiter"></td>
+                        <td>Повышеной<br>комфортности</td>
+                        <td>Двухместная кровать <img src="../img/bed-2.png" alt="Двухместная кровать"></td>
+                        <td>
+                            2 человека
+                            <div class="cb-table-available-rooms__icons">
+                                <i class="mdi mdi-account"></i><i class="mdi mdi-account"></i>
+                            </div>
+                        </td>
+                        <td>9 номеров</td>
+                        <td><a href="#" class="cb-btn cb-btn_blue">Создать заявку</a></td>
+                        <td class="cb-table-available-rooms__delimiter"></td>
+                    </tr>
+                    <tr class="cb-table-available-rooms__rows-white cb-table-available-rooms__rows-white_bottom">
+                        <td  colspan='8'></td>
+                    </tr>
+
+
+                    <!-- серый разделитель -->
+                    <tr>
+                        <td class="cb-table-available-rooms__rows-gray" colspan='8'></td>
+                    </tr>
+
+                    <!-- второй белый блок -->
+                    <tr class="cb-table-available-rooms__rows-white cb-table-available-rooms__rows-white_top">
+                        <td  colspan='8'></td>
+                    </tr>
+                    <tr class="cb-table-available-rooms__rows-white">
+                        <td class="cb-table-available-rooms__border-right" rowspan='2'>Двухместный</td>
+                        <td class="cb-table-available-rooms__delimiter"></td>
+                        <td class="cb-table-available-rooms__border-bottom">Базовый</td>
+                        <td class="cb-table-available-rooms__border-bottom">
+                            Две двухместные кровати <img src="../img/bed-2.png" alt="Двухместная кровать"><img src="../img/bed-1.png" alt="дополнительное место"><img src="../img/bed-1.png" alt="дополнительное место"><br>
+                            + 1 дополнительное место
+                            <img src="../img/bed-1.png" alt="дополнительное место">
+                        </td>
+                        <td class="cb-table-available-rooms__border-bottom">
+                            4-5 человека 
+                            <div class="cb-table-available-rooms__icons">
+                                <i class="mdi mdi-account"></i><i class="mdi mdi-account"></i><i class="mdi mdi-account"></i><i class="mdi mdi-account"></i><i class="mdi mdi-account-plus"></i>
+                            </div>
+                        </td>
+                        <td class="cb-table-available-rooms__border-bottom">5 номеров</td>
+                        <td class="cb-table-available-rooms__border-bottom"><a href="#" class="cb-btn cb-btn_blue">Создать заявку</a></td>
+                        <td class="cb-table-available-rooms__delimiter"></td>
+                    </tr>
+                    <tr class="cb-table-available-rooms__rows-white">
+                        <td class="cb-table-available-rooms__delimiter"></td>
+                        <td>Повышеной<br>комфортности</td>
+                        <td>Две двухместные кровати <img src="../img/bed-2.png" alt="Двухместная кровать"><img src="../img/bed-2.png" alt="Двухместная кровать"></td>
+                        <td>
+                            4 человека
+                            <div class="cb-table-available-rooms__icons">
+                                <i class="mdi mdi-account"></i><i class="mdi mdi-account"></i><i class="mdi mdi-account"></i><i class="mdi mdi-account"></i>
+                            </div>
+                        </td>
+                        <td>9 номеров</td>
+                        <td><a href="#" class="cb-btn cb-btn_blue">Создать заявку</a></td>
+                        <td class="cb-table-available-rooms__delimiter"></td>
+                    </tr>
+                    <tr class="cb-table-available-rooms__rows-white cb-table-available-rooms__rows-white_bottom">
+                        <td  colspan='8'></td>
+                    </tr>
+                    <!-- второй белый блок конец-->
+
+                </table>
+                <!-- свободные номера конец-->
+
+
+
+
+
+
+
+
+
+            </div>
+
+            <!--**************************************************************************
+            *****************************************Центральный блок *************************
+            ******************************************************************************-->
+
+
+
+            
+
+
+        </div>
+
+   
+
+  
+
+        <div class="cb-footer">
+                <a href="#" class="cb-footer__logo"></a>
+                <div class="cb-footer__copy">
+                    © 2016, Корпоративный портал Банка России
+                </div>
+        </div>
+    </div>
+               
+    @@include('./file-include/popup.html')           
+
+

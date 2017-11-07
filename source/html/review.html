@@ -1,0 +1,118 @@
+
+	@@include('./file-include/head.html')
+
+
+	<div class="cb-wrapper">
+ 
+        <!-- @@include('./file-include/header.html') -->
+    
+        <div class="cb-row cb-action-menu">
+            <div class="cb-action-menu__wrap">
+                <a href="#" class="cb-btn cb-btn_blue">Назад</a>
+                <ul class="cb-action-menu__list">
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="cb-row">  
+            <!--**************************************************************************
+            *****************************************Главный блок *************************
+            ******************************************************************************-->
+
+            <div class="cb-col cb-col-12">
+
+                    <!-- Найти свободные места -->
+                <div class="cb-container-block cb-container-block_mb-30">
+                    <h1 class="cb-title cb-title_mb-55">Добавить отзыв</h1>
+                    <div class="cb-title cb-title_small cb-title_dispaly-block cb-title_mb-15">Период и место отдыха</div>
+                    
+                    <table class="cb-table-free-places cb-table-free-places_width cb-table-free-places_mb-50">
+                        <tr>
+                            <td>
+                                <div class="cb-free__dropdown">
+                                    <select tabindex="4" class="cb-dropdown">
+                                        <option value="" class="label" value="">Выбрать место</option>
+                                        <option value="1">Место  номер 1</option>
+                                        <option value="2">Место номер 2</option>
+                                        <option value="2">Место номрер 20</option>
+                                        <option value="2">Какое-то место </option>
+                                     </select>
+                                 </div>
+                            </td>
+                            <td>
+                                <div class="cb-calendar ">
+                                    <div class="cb-calendar__text">Дата заезда:</div>
+                                    <input type="text"
+                                        class="cb-calendar__input datepicker-here"
+                                       
+                                        data-multiple-dates-separator=", "
+                                        />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                    <h2 class="cb-title cb-title_small cb-title_mb-15">Оцените ваш отдых</h2>
+                    <table class="cb-table-assessment">
+                        <tr class="cb-table-assessment__header">
+                            <td>Питание</td>
+                            <td>Проживание</td>
+                            <td>Развлечения</td>
+                        </tr>
+                        <tr class="cb-table-assessment__body">
+                            <td>
+                                <div class="cb-stars-rating">
+                                    <i class="mdi mdi-star active"></i>
+                                    <i class="mdi mdi-star active"></i>
+                                    <i class="mdi mdi-star active"></i>
+                                    <i class="mdi mdi-star active"></i>
+                                    <i class="mdi mdi-star active"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cb-stars-rating cb-stars-rating_blue">
+                                    <i class="mdi mdi-star active"></i>
+                                    <i class="mdi mdi-star active"></i>
+                                    <i class="mdi mdi-star active"></i>
+                                    <i class="mdi mdi-star-outline"></i>
+                                    <i class="mdi mdi-star-outline"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cb-stars-rating cb-stars-rating_blue">
+                                    <i class="mdi mdi-star active"></i>
+                                    <i class="mdi mdi-star active"></i>
+                                    <i class="mdi mdi-star active"></i>
+                                    <i class="mdi mdi-star active"></i>
+                                    <i class="mdi mdi-star-outline"></i>
+                                </div>
+                            </td> 
+                        </tr>
+                    </table>
+
+                    <h2 class="cb-title cb-title_small cb-title_mb-15">Отзыв</h2>
+
+                    <textarea name="textarea" id="textarea" class="cb-textarea" placeholder='Напишите, что вам понравилось в этом месте отдыха, а что можно улучшить.'></textarea>
+
+                    <a href="#" class="cb-btn cb-btn_blue cb-btn_right">Отправить</a>
+                </div>
+            </div>
+
+            <!--**************************************************************************
+            *****************************************Центральный блок *************************
+            ******************************************************************************-->
+        </div>
+        <div class="cb-footer">
+                <a href="#" class="cb-footer__logo"></a>
+                <div class="cb-footer__copy">
+                    © 2016, Корпоративный портал Банка России
+                </div>
+        </div>
+    </div>
+               
+    @@include('./file-include/popup.html')           
+
+
