@@ -8,6 +8,8 @@
   }  
 
 .datepicker--cells {
+  .clearfix;
+  padding-bottom: 5px;
   }
 
 .datepicker--cell {
@@ -15,7 +17,8 @@
   box-sizing: border-box;
   cursor: pointer;
   position: relative;
-  height: 32px;
+  height: 30px;
+  width: 30px;
   z-index: 1; 
   border-radius: 50%;
 }
@@ -67,11 +70,12 @@
 
 .datepicker--days-names {
   .clearfix;
-  margin: 8px 0 3px; }
+  margin: 8px 0; }
 
 .datepicker--day-name {
   float: left;
-  width: 14.28%;
+  width: 12.4%;
+  margin: 0 0.9%;
   color: #bdbfc5;
   text-align: center;
   
@@ -80,17 +84,22 @@
 
 .datepicker--cell-day {
   float: left;
-  width: 14.28571%;
+  width: 12.4%;
+  margin: 0 0.9%;
   text-align: center;
-  padding-top: 8px; }
+  padding-top: 7px; }
 
 .datepicker--cells-months {
   .clearfix;
   height: 170px; }
 
 .datepicker--cell-month {
+  float: left;
   width: 33.33%;
-  height: 25%; }
+  height: 25%;
+  text-align: center;
+  padding-top: 12px;
+  border-radius: 5px; }
 
 .datepicker--years {
   height: 170px; }
@@ -100,7 +109,11 @@
 
 .datepicker--cell-year {
   width: 25%;
-  height: 33.33%; }
+  height: 33.33%;
+  float: left;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 19px; }
 
 .datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade- {
   color: #dedede;
