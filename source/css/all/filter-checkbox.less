@@ -1,0 +1,154 @@
+.cb-filter-checkbox {
+	padding: 0 40px;
+	margin-bottom: 20px;
+	.clearfix;
+	
+	&__list {
+		.clearfix;
+		display: inline-block;
+	}
+
+	&__elem {
+		position: relative;
+		display: inline-block;
+		float: left;
+		margin-right: 25px;
+		
+		&_arrow-right {
+			&:before {
+				content: "\f443";
+				font-family: "Material Design Icons";
+				position: absolute;
+				top: 50%;
+				transform: translate(0, -50%);
+				right: -18px;
+				color: @gray;
+			}
+
+			&:after {
+				content: "";
+				display: inline-block;
+				width: 5px;
+				height: 4px;
+				position: absolute;
+				top: 50%;
+				transform: translate(0, -50%);
+				right: -7px;
+				z-index:10;
+				background-color: @bg-color;
+			}
+		}
+	}
+
+	&__link {
+		display: inline-block;
+		position: relative;
+		padding: 5px 9px;
+		border-radius: 4px;
+		color: @black;
+		font-size: 14px;
+		line-height: 1;
+		height: 26px;
+		
+		&_active {
+			.cb-filter-checkbox {
+				&__marker {
+					border: 1px solid @blue;
+					&:after {
+						content: '';
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						background-color: @blue;
+				        border-radius: 50%;	
+				        width: 10px;
+				        height: 10px;
+					}
+				}
+			}
+		}
+		
+		
+		&_created {
+			background-color: @created;
+		}
+		&_approved {
+			background-color: @approved;
+		}
+		&_reserved {
+			background-color: @reserved;
+		}
+		&_calculated {
+			background-color: @calculated;
+		}
+		&_confirmed {
+			background-color: @confirmed;
+		}
+		&_paid {
+			background-color: @paid;
+		}
+		&_disapproved {
+			background-color: @disapproved;
+		}
+
+		&_default {
+			background-color: transparent;
+			padding: 5px 0px;
+		}
+
+		&:hover {
+			.cb-filter-checkbox__dropdown {
+				top: 35px;
+			}
+		}
+	}
+
+
+
+	&__text {
+		vertical-align: middle;
+	}
+
+	&__marker {
+		display: inline-block;
+		position: relative;
+		width: 16px;
+		height: 16px;
+		border: 1px solid @gray;
+	    border-radius: 50%;
+	    margin-right: 3px;
+	    background-color: #fff;
+	    line-height: 0;
+	    vertical-align: middle;
+	}
+
+	&__dropdown {
+		position: absolute;
+		top: -10000px;
+		left: 0;
+		width: 330px;
+		padding:40px;
+		box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.28);
+		background-color: #fff;
+		z-index: 1000;
+        box-sizing: border-box;
+        
+        &_right {
+        	left: auto;
+        	right: 0;
+        }
+		
+		&:after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 25px;
+			top: -20px;
+			left: 0;
+			z-index: 1000;
+		}
+	}
+
+
+}

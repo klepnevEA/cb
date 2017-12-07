@@ -1,29 +1,29 @@
 
-	@@include('./file-include/head.html')
+@@include('./file-include/head.html')
 
 
-	<div class="cb-wrapper">
- 
-        <!-- @@include('./file-include/header.html') -->
-    
-        <div class="cb-row cb-action-menu">
-            <div class="cb-action-menu__wrap">
-                <a href="#" class="cb-btn cb-btn_blue">Назад</a>
-                <ul class="cb-action-menu__list">
-                </ul>
-            </div>
+<div class="cb-wrapper">
+   
+    <!-- @@include('./file-include/header.html') -->
+    @@include('./file-include/nav.html')  
+    <div class="cb-row cb-action-menu">
+        <div class="cb-action-menu__wrap">
+            <a href="#" class="cb-btn cb-btn_blue">Назад</a>
+            <ul class="cb-action-menu__list">
+            </ul>
         </div>
+    </div>
 
 
 
-        <div class="cb-row">  
+    <div class="cb-row">  
             <!--**************************************************************************
             *****************************************Главный блок *************************
             ******************************************************************************-->
 
             <div class="cb-col cb-col-12">
 
-                    <!-- Найти свободные места -->
+                <!-- Найти свободные места -->
                 <div class="cb-container-block cb-container-block_mb-15">
                     <h1 class="cb-title">Горящие путёвки</h1>
                     <table class="cb-table-free-places">
@@ -36,27 +36,27 @@
                                         <option value="2">Место номер 2</option>
                                         <option value="2">Место номрер 20</option>
                                         <option value="2">Какое-то место </option>
-                                     </select>
-                                 </div>
+                                    </select>
+                                </div>
                             </td>
                             <td>
                                 <div class="cb-calendar ">
                                     <div class="cb-calendar__text">Дата заезда:</div>
                                     <input type="text"
-                                        class="cb-calendar__input datepicker-here"
-                                       
-                                        data-multiple-dates-separator=", "
-                                        />
+                                    class="cb-calendar__input datepicker-here"
+                                    
+                                    data-multiple-dates-separator=", "
+                                    />
                                 </div>
                             </td>
                             <td>
                                 <div class="cb-calendar ">
                                     <div class="cb-calendar__text">Дата выезда:</div>
                                     <input type="text"
-                                        class="cb-calendar__input datepicker-here"
-                                       
-                                        data-multiple-dates-separator=", "
-                                        />
+                                    class="cb-calendar__input datepicker-here"
+                                    
+                                    data-multiple-dates-separator=", "
+                                    />
                                 </div>
                             </td>
                             <td><a href="#" class="cb-btn cb-btn_transparent cb-btn_transparent_blue">Сбросить фильтр</a></td>
@@ -101,7 +101,7 @@
                     </div> 
                     <!-- блок конец-->  
 
-                   <!-- блок -->
+                    <!-- блок -->
                     <div class="cb-col cb-col-6">
                         <div class="cb-advertising__item">
                             <div class="cb-advertising__date cb-advertising__date_vouchers">
@@ -135,7 +135,7 @@
                     </div> 
                     <!-- блок конец-->  
 
-                   <!-- блок -->
+                    <!-- блок -->
                     <div class="cb-col cb-col-6">
                         <div class="cb-advertising__item">
                             <div class="cb-advertising__date cb-advertising__date_vouchers">
@@ -363,18 +363,18 @@
 
         </div>
 
-   
+        
 
-  
+        
 
         <div class="cb-footer">
-                <a href="#" class="cb-footer__logo"></a>
-                <div class="cb-footer__copy">
-                    © 2016, Корпоративный портал Банка России
-                </div>
+            <a href="#" class="cb-footer__logo"></a>
+            <div class="cb-footer__copy">
+                © 2016, Корпоративный портал Банка России
+            </div>
         </div>
     </div>
-               
+    
     @@include('./file-include/popup.html')           
 
 
