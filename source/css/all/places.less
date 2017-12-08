@@ -4,12 +4,13 @@
 		.clearfix;
 		background-color: #fff;
 		margin-bottom: @sp;
-		height: 210px;
+		//height: 210px;
 		border-radius: 4px;
 		overflow: hidden;
 	}
 
 	&__photo {
+		.clearfix;
 		position: relative;
 		float: left;
 		width: 280px;
@@ -20,19 +21,32 @@
 	}
 
 	&__info {
+		.clearfix;
 		position: relative;
-		padding: 40px 40px 40px @sp*2;
+		padding: 40px 40px 0px @sp*2;
 		float: left;
 		width: calc(~'100% - 280px');
 	}
 
 	&__title {
+		width: 100%;
 		font-family: Arial;
 		font-size: 21px;
 		font-weight: bold;
 		line-height: 1.33;
 		color: @blue;
 		float: left;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	&__confirm {
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		white-space: nowrap;
 	}
 
 	&__rating {
@@ -50,6 +64,10 @@
 			color: @black;
 			float: right;
 		}
+
+		&_top-0 {
+			top: 0;
+		}
 	}
 
 	&__text {
@@ -63,6 +81,14 @@
 		// width: calc(~'100% - 250px');
 		float: left;
 		overflow: hidden;
+		
+		&_place {
+			max-width: 70%;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			margin-bottom: @sp;
+		}
 	}
 
 	&__reviews {
@@ -93,9 +119,61 @@
 		line-height: 1.58;
 		background-color: #FCE5CE;
 		color: @black;
-        border-radius: 0 0 4px 4px;
-        z-index:10;
+		border-radius: 0 0 4px 4px;
+		z-index:10;
+
+		&_created {
+			background-color: @created;
+		}
 	}
 
+	&__date {
+		font-family: Arial;
+		font-size: 14px;
+		line-height: 1.57;
+		color: @gray;
+		float: left;
 
+		i {
+			position: relative;
+			top: 2px;
+			margin-right: 3px;
+			font-size: 20px;
+			line-height: 0;
+		}
+
+		&-text {
+			color: @gray;
+		}
+	}
+
+	&__dropdown {
+		.clearfix;
+		padding: 30px;
+		border-radius: 0 0 4px 4px;
+		border: solid 1px #bdbfc5;
+		
+		&-title {
+			font-size: 21px;
+			color: @black;
+			margin-bottom: 10px;
+		}
+
+		&-text {
+			font-size: 17px;
+			color: @black;
+		}
+
+		&-body {
+			margin-bottom: 20px;
+		}
+
+		&-center {
+			text-align: center;
+			
+			.cb-btn {
+				margin: 0 5px;
+			}
+		}
+	}
 }

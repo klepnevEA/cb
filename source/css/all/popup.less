@@ -218,5 +218,23 @@
 		}
 	}
 
+	&__overflow-scroll {
+		.clearfix;
+		overflow-y: auto;
+		width: 100%;
+		max-height: calc(~'100% - 200px');
+		-ms-overflow-style: none;
+		overflow: -moz-scrollbars-none;
+		&::-webkit-scrollbar { width: 0; }
+
+
+	}
+
+	&-responsible {
+		width: 982px;
+		min-height: 100px;
+		padding: 40px;
+	}
+
 	
 }

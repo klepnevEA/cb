@@ -1,0 +1,94 @@
+.cb-days-grace {
+	&-block {
+		padding: 40px 45px;
+	    margin-bottom: 75px;
+	    background: white;
+	    border-radius: 4px;
+	    position: relative;
+	    
+
+	    .cb-btn {
+		    position: absolute;
+		    top: 34px;
+		    right: 40px;
+		}
+	}
+
+	&__list {
+		padding-top: 7px;
+	}
+
+	&__info {
+		.clearfix;
+		width: 100%;
+		margin-bottom: @sp/3;
+	}
+
+	&__name {
+		font-family: Arial;
+		font-size: 17px;
+		line-height: 1.65;
+		float: left;
+		width: 50%;
+		color: @black;
+		overflow: hidden;
+    	text-overflow: ellipsis;
+    	white-space: nowrap;
+	}
+
+	&__comment {
+		color: @black;
+		font-size: 14px;
+		text-align: right;
+		float: right;
+		width: 50%;
+		line-height: 1.5;
+		
+		
+		.mdi {
+			position: relative;
+			top: -3px;
+			font-size: 7px;
+			
+			&.green {
+				color: @green;
+			}
+
+			&.orange {
+				color: @orange;
+			}
+		}
+	}
+
+	&__schedule {
+		.clearfix;
+		height: 20px;
+		width: 100%;
+		
+		&-elem {
+			position: relative;
+			float: left;
+			height: 100%;
+			border: 1px solid @gray;
+	        border-radius: 20px;
+	        margin-bottom: 20px;
+	        
+	        &.active {
+	        	
+	        	background-color: @green;
+	        	
+	        	&:after {
+	        		content: "";
+	        		position: absolute;
+	        		top: 50%;
+	        		left: 50%;
+	        		transform: translate(-50%, -50%);
+	        		height: 6px;
+	        		width: 50%;
+	        		background-color: @orange;
+       		        border-radius: 20px;
+	        	}
+	        }
+		}
+	}
+}
