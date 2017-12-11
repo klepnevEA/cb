@@ -1,0 +1,40 @@
+.cb-beadcrumbs {
+	.clearfix;
+	padding-top: 25px;
+
+	&__elem {
+		display: inline-block;
+		position: relative;
+		float: left;
+		margin-right: 35px;
+		
+		&:last-child {
+			.cb-beadcrumbs {
+				&__link {
+					opacity: 1;
+					
+					&:after {
+						content: '';
+					}
+				}
+			}
+		}
+		
+
+	}
+
+	&__link {
+		color: #fff;
+		opacity: 0.5;
+		font-size: 17px;
+		
+		&:after {
+			content: '\f142';
+			position: absolute;
+			top: 2px;
+			right: -26px;
+			font-family: "Material Design Icons";
+		}
+	}
+
+}
