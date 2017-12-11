@@ -1,0 +1,47 @@
+.cb-info-drop {
+	position: relative;
+	top: -20px;
+	color: @blue;
+	font-size: 20px;
+	cursor: pointer;
+	
+	&__block {
+		position: absolute;
+	    top: -10000px;
+	    left: 0;
+	    width: 330px;
+	    padding: 40px;
+	    color: @black;
+	    text-align: left;
+	    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.28);
+	    background-color: #fff;
+	    z-index: 1000;
+	    box-sizing: border-box;
+	    font-size: 14px;
+	    font-weight: normal;
+	    
+	    p {
+	    	margin-bottom: 20px;
+	    }
+
+	    a {
+	    	color: @blue;
+	    }
+
+	    &:before {
+	    	content: "";
+		    position: absolute;
+		    width: 100%;
+		    height: 25px;
+		    top: -20px;
+		    left: 0;
+		    z-index: 9000;
+	    }
+	}
+
+	&:hover {
+		.cb-info-drop__block {
+			top: 25px;
+		}
+	}
+}	

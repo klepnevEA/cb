@@ -1,0 +1,141 @@
+.cb-grace-days {
+	.clearfix;
+	margin-bottom: 20px;
+	
+	&__title {
+		font-family: Arial;
+		font-size: 21px;
+		font-weight: bold;
+		line-height: 1.33;
+		color: @black;	
+		margin-bottom: 10px;	
+	}
+
+	&__wrap {
+		.clearfix;
+	}
+
+	&__elem {
+		display: inline-block;
+		float: left;
+		color: @black;
+		transition: 0.3s;
+		
+		&_active {
+			.cb-grace-days {
+				&__schedule {
+
+					&-line {
+						background-color: @green;
+						border: 1px solid @green;
+						
+						&:after {
+							content: "";
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							height: 6px;
+							width: 50%;
+							background-color: @orange;
+							border-radius: 20px;
+							transition: 0.3s;
+						}
+					}
+
+					&-bracket {
+						opacity: 1;
+					}
+
+
+				}
+
+
+				&__text {
+					text-align: center;
+				}
+
+			}
+		}
+
+		&:hover {
+			color: @turquoise;
+			
+
+			& .cb-grace-days {
+				&__schedule {
+					&-line {
+						border: 1px solid @turquoise;
+						background-color: @turquoise;
+						
+						&:after {
+							background-color: @turquoise;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__text {
+		font-family: Arial;
+		font-size: 14px;
+		line-height: 1.29;
+		margin-bottom: 5px;
+		min-height: 36px;
+		
+		span {
+			font-weight: bold;
+		}
+	}
+
+	&__schedule {
+		position: relative;
+		height: 17px;
+		width: 100%;
+		margin-bottom: 20px;
+
+		&-line {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			border: 1px solid @gray;
+			border-radius: 20px;
+			margin-bottom: 10px;
+			transition: 0.3s;
+		}
+
+		&-bracket {
+			position: relative;
+			width: 100%;
+			height: 1px;
+			background-color: @gray;
+			opacity: 0;
+			
+			&:before {
+				content: '';
+				position: absolute;
+				left: 50%;
+				transform: translate(-50%, 0);
+				width: 0;
+				height: 0;
+				border-left: 12px solid transparent;
+				border-right: 12px solid transparent;
+				border-top: 7px solid @gray;
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				left: 50%;
+				top: -1px;
+				transform: translate(-50%, 0);
+				width: 0;
+				height: 0;
+				border-left: 12px solid transparent;
+				border-right: 12px solid transparent;
+				border-top: 7px solid #fff;
+			}
+		}
+	}
+}

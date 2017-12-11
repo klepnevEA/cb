@@ -17,12 +17,12 @@
 		height: 100%;
 		background-color: rgba(54, 59, 73, 0.6);
 		text-align: center;
-        &:after {
-        	content: '';
-        	display: inline-block;
-        	height: 100%;
-        	vertical-align: middle;
-        } 
+		&:after {
+			content: '';
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		} 
 	}
 
 	&__wrap {
@@ -31,11 +31,10 @@
 		width: 1130px;
 		margin: 0 auto;
 		background-color: #fff;
-        border-radius: 4px;
-        vertical-align: middle;
-        text-align: left;
-        overflow: hidden;
-        box-sizing: border-box;
+		border-radius: 4px;
+		vertical-align: middle;
+		text-align: left;
+		box-sizing: border-box;
 	}
 
 	&__close {
@@ -83,26 +82,26 @@
 	}
 
 	&__text {
-		  font-size: 14px;
-		  line-height: 1.57;
-		  text-align: left;
-		  color: @black;
-		  margin-bottom: @sp*2;
-		  max-height: 63px;
-		  overflow: hidden;
-		  
-		  &_float-left {
-		  	display: inline-block;
-		  	float: left;
-		  	max-width: 400px;
-		  	overflow: hidden;
-		  	text-overflow: ellipsis;
-		  	white-space: nowrap;
-		  }
+		font-size: 14px;
+		line-height: 1.57;
+		text-align: left;
+		color: @black;
+		margin-bottom: @sp*2;
+		max-height: 63px;
+		overflow: hidden;
 
-		  &_margin-bottom {
-		  	margin-bottom: 20px;
-		  }
+		&_float-left {
+			display: inline-block;
+			float: left;
+			max-width: 400px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+
+		&_margin-bottom {
+			margin-bottom: 20px;
+		}
 	}
 
 	&-places {
@@ -110,11 +109,11 @@
 		&__photo {
 			width: 520px;
 			height: 100%;
-	        background-size: cover;
-	        background-position: center center;
-	        float: left;
-	        box-sizing: border-box;
-            border-radius: 4px 0 0 4px;
+			background-size: cover;
+			background-position: center center;
+			float: left;
+			box-sizing: border-box;
+			border-radius: 4px 0 0 4px;
 		}
 
 		&__info {
@@ -161,7 +160,7 @@
 		&__find {
 			position: relative;
 			top: -5px;
-		    left: 10px;
+			left: 10px;
 		}
 	}
 
@@ -203,7 +202,7 @@
 
 		&__info {
 			padding: 40px;
-	        box-sizing: border-box;
+			box-sizing: border-box;
 		}
 
 		&__photo-total {
@@ -227,11 +226,51 @@
 		overflow: -moz-scrollbars-none;
 		&::-webkit-scrollbar { width: 0; }
 
+		&_visible {
+			position: relative;
+			padding-right: 10px;
+			
+			&::-webkit-scrollbar-button { 
+				width:5px; 
+				height:0px 
+			} 
+
+			&::-webkit-scrollbar-track { 
+				background-color: rgba(38, 46, 71, 0.12); 
+				border-radius: 10px; 
+			} 
+
+			&::-webkit-scrollbar-thumb { 
+				-webkit-border-radius: 10px; 
+				border-radius: 10px; 
+				background-color:@black; 
+			} 
+
+			&::-webkit-resizer{ 
+				width:5px; 
+				height:0px 
+			} 
+
+			&::-webkit-scrollbar{ 
+				width: 4px; 
+			}
+		}
+
 
 	}
 
 	&-responsible {
 		width: 982px;
+		min-height: 100px;
+		padding: 40px;
+	}
+
+
+
+	// -expenditure-grace-days
+	
+	&-expenditure-grace-days {
+		width: 1150px;
 		min-height: 100px;
 		padding: 40px;
 	}
