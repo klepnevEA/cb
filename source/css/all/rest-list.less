@@ -1,0 +1,119 @@
+.cb-rest-list {
+	position: relative;
+	min-height: 150px;
+	padding-right: 10px;
+	margin-bottom: 10px;
+	&__elem {
+		.clearfix;
+		margin-bottom: 30px;
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		.cb-btn {
+			&:hover {
+				color: @red;
+			}
+		}
+	}
+
+	&__info {
+		float: left;
+		width: 55%;
+	}
+
+	&__buttons {
+		float: left;
+		width: 45%;
+		text-align: right;
+		
+		.cb-btn {
+			float: right;
+			margin-left: 5px;
+		}
+	}
+
+	&__name {
+		position: relative;
+		display: inline-block;
+		font-size: 17px;
+		line-height: 1.1;
+		color: @blue;
+		margin-bottom: 10px;
+		
+		&:hover {
+			text-decoration: underline;	
+		}
+	}
+
+	&__status {
+		font-size: 14px;
+		line-height: 1.1;
+		color: @gray;
+		margin-bottom: 5px;
+	}
+
+	&__marker {
+		position: absolute;
+		top: 0;
+		right: -50px;
+		color: @black;
+		font-size: 14px;
+		font-weight: bold;
+		white-space: nowrap;
+	}
+
+	&_scroll {
+		max-height: 500px;
+		overflow-y: auto;
+		
+		&::-webkit-scrollbar-button { 
+			width:5px; 
+			height:0px 
+		} 
+
+		&::-webkit-scrollbar-track { 
+			background-color: rgba(38, 46, 71, 0.12); 
+			border-radius: 10px; 
+		} 
+
+		&::-webkit-scrollbar-thumb { 
+			-webkit-border-radius: 10px; 
+			border-radius: 10px; 
+			background-color:@black; 
+		} 
+
+		&::-webkit-resizer{ 
+			width:5px; 
+			height:0px 
+		} 
+
+		&::-webkit-scrollbar{ 
+			width: 4px; 
+		}
+	}
+
+	&_min-height {
+		min-height: 600px;
+	}
+
+	&__empty {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		
+		&-title {
+			font-size: 31px;
+			color: @gray;
+		}
+
+		&-text {
+			font-size: 21px;
+			color: @gray;
+			white-space: nowrap;
+		}
+	}
+}

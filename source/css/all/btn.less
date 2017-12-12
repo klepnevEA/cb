@@ -69,6 +69,20 @@
 		}
 	}
 
+	&_red-text {
+		color: @red;
+	}
+
+	&_disabled {
+		color: @gray;
+		cursor: default;
+		
+		&:hover {
+			background-color: @bg-color;
+		}
+		
+	}
+
 	&_transparent {
 		border: 1px solid transparent;
 		background-color: transparent;
@@ -86,6 +100,7 @@
 
 	&_right {
 		float: right;
+		margin-left: 10px;
 	}
 
 	&-block {
@@ -165,6 +180,18 @@
 			top: -20px;
 			left: 0;
 			z-index: 9000;
+		}
+	}
+
+	&_icon-round {
+		display: inline-block;
+		position: relative;
+		padding: 9px 10px;
+
+	
+		.mdi {
+			font-size: 25px;
+			line-height: 20px;
 		}
 	}
 

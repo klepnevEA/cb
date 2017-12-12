@@ -4,7 +4,6 @@
     margin-bottom: 75px;
     background: white;
     border-radius: 4px;
-    // min-height: 259px;
     position: relative;
     
     &_mb {
@@ -16,6 +15,10 @@
             padding-bottom: @sp/3;
         }
 
+        &-5 {
+            margin-bottom: @sp/3;
+        }
+
         &-15 {
             margin-bottom: @sp;
         }
@@ -23,9 +26,88 @@
         &-30 {
             margin-bottom: 30px;
         }
+
+        &-60 {
+            margin-bottom: 60px;
+        }
     }
 
 	&_padding {
 		padding: 35px 0px;
 	}
+
+    &_padding-15 {
+        padding: 15px;
+    }
+
+    &_padding-15-90 {
+        padding: @sp 90px;
+    }
+
+    &_border-gray {
+        border: 1px solid @gray;
+    }
+
+    &__footer {
+        position: relative;
+        left: -16px;
+        width: calc(~'100% + 32px');
+        border-top: 1px solid @gray;
+        padding: @sp @sp 0;
+        
+        .cb-title {
+            margin-top: @sp/3;
+        }
+
+        &-dropdown {
+            position: absolute; 
+            left: 0px;
+            bottom: 5px;  
+            width: 100%;    
+            padding: @sp;    
+            background-color:   #fff;
+            border-radius:  4px 4px 0 0;
+            border-top: 1px solid @gray;
+            border-left: 1px solid @gray;
+            border-right: 1px solid @gray;
+            z-index: 100;
+            
+            &-close {
+                position: absolute; 
+                color: @black;
+                top: 10px;  
+                right: 10px;
+                font-size:  20px;
+                z-index: 200;
+                
+
+            }
+            
+            .cb-input,
+            .cb-dropdown,
+            .cb-calendar {
+                margin-bottom: @sp*2;
+            }
+
+            .cb-calendar {
+                max-width: 1000;
+                
+                &__input {
+                    padding: 0 12px 0 120px;
+                }
+                
+            }
+        }
+    }
+
+    &__left {
+        float: left;
+    }
+
+    &__right {
+        float: right;
+        &_pt-5 {
+            padding-top: 5px;
+        }
+    }
 }

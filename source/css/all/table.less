@@ -5,8 +5,25 @@
 		font-family: Arial;
 		font-size: 14px;
 		line-height: 1.57;
-		padding: 0px 50px 3px 0px;
+		padding: 0px 10px 3px 0px;
 		color: @black;
+		vertical-align: top;
+		
+		&:last-child {
+			padding-right: 0;
+		}
+		
+		&.cb-table__td-right {
+			text-align: right;
+		}
+
+		a {
+			color: @blue;
+			whi
+			&:hover {
+				color: @blue;
+			}
+		}
 		
 	}
 	thead {
@@ -23,14 +40,66 @@
 		}
 	}
 
+
 	&_border-gray {
-        border-radius: 4px;
-        border: 1px solid @gray;
-        padding: 8px 20px;
+		border-radius: 4px;
+		border: 1px solid @gray;
+		padding: 8px 20px;
+		
+		td {
+			width: 10%;
+			&:first-child {
+				width: 20%;
+			}
+		}
+		
+
 	}
 
 	&_mb-30 {
 		margin-bottom: 30px;
+	}
+
+	&-big {
+		margin-bottom: 55px;
+		width: 100%;
+		
+		td {
+			font-family: Arial;
+			font-size: 17px;
+			line-height: 1.65;
+			padding: 0px 25px 3px 40px;
+			color: @black;
+			
+			&:first-child {
+				padding-left: 0;
+			}
+			
+		}
+
+		&__border-right {
+			border-right: 1px solid @gray;
+		}
+
+		thead {
+			td {
+				font-size: 21px;
+				font-weight: bold;
+				padding-bottom: 20px;
+			}
+		}
+
+		tbody {
+			td {
+				padding-top: 20px;
+				padding-bottom: 30px;
+				vertical-align: top;
+			}
+		}
+
+		.mdi {
+			color: @gray;
+		}
 	}
 
 }
