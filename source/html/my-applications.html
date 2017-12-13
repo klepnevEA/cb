@@ -8,7 +8,7 @@
     @@include('./file-include/nav.html')
 
     <div class="cb-row">
-        <div class="cb-col cb-col-8">
+        <div class="cb-col cb-col-4">
             <div class="cb-nav-wrap cb-nav-wrap_gray">
 
                 <div class="cb-nav">
@@ -27,8 +27,34 @@
                 </div>
             </div>
         </div>
-        <div class="cb-col cb-col-4">
+        <div class="cb-col cb-col-8">
             <a href="#" class="cb-link cb-link_dached cb-link_padding-top">Ответственные в моём подразделении</a>
+
+            <button class="cb-btn cb-btn_blue cb-btn_ml-20">
+                Создать плановую заявку
+                <span class="cb-btn__dropdown">
+                    <span class="text">
+                        <p>
+                            Плановая заявка создаётся на следующий год и включается в сводную заявку подразделения.
+                        </p>
+                        <p>
+                            Подробнее про Плановую заявку можно прочитать в блоке <a href="#">«Часто задаваемые вопросы»</a> 
+                        </p>
+                    </span>
+                </span>
+            </button>
+            <button class="cb-btn cb-btn_blue cb-btn_ml-20">Создать заявку на этот год
+                <span class="cb-btn__dropdown cb-btn__dropdown_right">
+                    <span class="text">
+                        <p>
+                            Плановая заявка создаётся на следующий год и включается в сводную заявку подразделения.
+                        </p>
+                        <p>
+                            Подробнее про Плановую заявку можно прочитать в блоке <a href="#">«Часто задаваемые вопросы»</a> 
+                        </p>
+                    </span>
+                </span>
+            </button>
         </div>
     </div>
 
@@ -138,302 +164,622 @@
     </div>
     <!-- список красивых чекьоксов конец -->    
 
-    <!-- две нопки справа --> 
-    <div class="cb-row">
-        <div class="cb-col cb-col-7">
+  
+    <div class="cb-container-block cb-container-block_transparent">
 
-        </div>
-        <div class="cb-col cb-col-5">
-            <button class="cb-btn cb-btn_blue cb-btn_mb-40">
-                Создать плановую заявку
-                <span class="cb-btn__dropdown">
-                    <span class="text">
-                        <p>
-                            Плановая заявка создаётся на следующий год и включается в сводную заявку подразделения.
-                        </p>
-                        <p>
-                            Подробнее про Плановую заявку можно прочитать в блоке <a href="#">«Часто задаваемые вопросы»</a> 
-                        </p>
-                    </span>
-                </span>
-            </button>
-            <button class="cb-btn cb-btn_blue cb-btn_mb-40">Создать заявку на этот год
-                <span class="cb-btn__dropdown cb-btn__dropdown_right">
-                    <span class="text">
-                        <p>
-                            Плановая заявка создаётся на следующий год и включается в сводную заявку подразделения.
-                        </p>
-                        <p>
-                            Подробнее про Плановую заявку можно прочитать в блоке <a href="#">«Часто задаваемые вопросы»</a> 
-                        </p>
-                    </span>
-                </span>
-            </button>
-        </div>       
-    </div>  
-    <!-- две нопки справа конец--> 
 
-    <div class="cb-row">  
-        <div class="cb-col cb-col-7">
-            <div class="cb-places">
-                <!-- список мест -->
-                <ul class="cb-places__list">
 
-                    <li class="cb-places__elem">
-                        <div class="cb-places__tagging cb-places__tagging_created">Создана</div>
-                        <div class="clearfix">
-                            <div class="cb-places__photo" style="background-image: url('../img/photo.png')">
-                                <a href="#" class="cb-btn cb-btn_blue cb-places__confirm">Подтвердить бронь</a>
-                            </div>
-                            <div class="cb-places__info">
-                                <div class="clearfix">
-                                    <div class="cb-places__date">
-                                        <i class="icon-calendar"></i>
-                                        <span class="cb-places__date-text">19 ноября 2017</span>
-                                    </div>
+        <div class="cb-row">  
+            <div class="cb-col cb-col-8">
+                <div class="cb-places cb-places_ml-0">
+                    <!-- список мест -->
+                    <ul class="cb-places__list">
 
-                                    <div class="cb-places__rating cb-places__rating_top-0">
-                                        <div class="cb-stars-rating">
-                                            <i class="mdi mdi-star active"></i>
-                                            <i class="mdi mdi-star active"></i>
-                                            <i class="mdi mdi-star active"></i>
-                                            <i class="mdi mdi-star"></i>
-                                            <i class="mdi mdi-star"></i>
+
+
+                        <li class="cb-places__elem">
+                            <div class="cb-places__tagging cb-places__tagging_reserved">Забронирована</div>
+                            <div class="clearfix">
+                                <div class="cb-places__photo" style="background-image: url('../img/photo.png')">
+                                 </div>
+                                <div class="cb-places__info">
+                                    <div class="clearfix">
+                                        <div class="cb-places__date">
+                                            <i class="icon-calendar"></i>
+                                            <span class="cb-places__date-text">с 10 ноября по 20 ноября 2017</span>
                                         </div>
-                                        <div class="cb-places__rating-number">3,1</div>
+
+                                        <div class="cb-places__rating cb-places__rating_top-0">
+                                            <div class="cb-stars-rating">
+                                                <i class="mdi mdi-star active"></i>
+                                                <i class="mdi mdi-star active"></i>
+                                                <i class="mdi mdi-star active"></i>
+                                                <i class="mdi mdi-star"></i>
+                                                <i class="mdi mdi-star"></i>
+                                            </div>
+                                            <div class="cb-places__rating-number">3,1</div>
+                                        </div>
                                     </div>
+
+
+                                    <div class="clearfix">
+                                        <div class="cb-places__title">Им. 50-летие Октября</div>
+
+                                    </div>
+
+                                    <div class="clearfix">
+                                        <div class="cb-places__text cb-places__text_place">г. Анапа, ул. Лётчика, 4</div>
+                                        <a href="#" class="cb-places__reviews">10 отзывов</a>
+                                    </div>
+
+                                    <table class="cb-table-places">
+                                        <tr class="cb-table-places__header">
+                                            <td>Отдыхающих</td>
+                                            <td rowspan="2"><a href="#" class="cb-btn cb-btn_right cb-btn_blue">Подтвердить бронь</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3 человека</td>
+                                        </tr>
+                                    </table>
+
+
                                 </div>
-                                
-
-                                <div class="clearfix">
-                                    <div class="cb-places__title">Им. 50-летие Октября</div>
-                                    
-                                </div>
-
-                                <div class="clearfix">
-                                    <div class="cb-places__text cb-places__text_place">г. Анапа, ул. Лётчика, 4</div>
-                                    <a href="#" class="cb-places__reviews">10 отзывов</a>
-                                </div>
-
-                                <table class="cb-table-places">
-                                    <tr class="cb-table-places__header">
-                                        <td>Отдыхающих</td>
-                                        <td>Цена</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3 человека</td>
-                                        <td>21 256₽</td>
-                                    </tr>
-                                </table>
-
-
                             </div>
-                        </div>
+
+                            <div class="cb-places__dropdown">
+                               <div class="cb-places__dropdown-body">
+                                   <div class="cb-places__dropdown-title">
+                                       Вы точно хотите отменить созданную заявку?
+                                   </div>
+                                   <div class="cb-places__dropdown-text">
+                                       При отмене созданной заявки, её нельзя будет восстановить.
+                                   </div>
+                               </div>
+                               <div class="cb-places__dropdown-buttons">
+                                    <a href="#" class="cb-btn cb-btn_blue">Нет, подумаю</a>
+                                    <a href="#" class="cb-btn cb-btn_white-red">Да, отменить</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="cb-places__elem cb-places__elem_created">
+                            <div class="cb-places__tagging cb-places__tagging_created">Создана</div>
+                            <div class="clearfix">
+                                <div class="cb-places__photo" style="background-image: url('../img/photo.png')">
+                                 </div>
+                                <div class="cb-places__info">
+                                    <div class="clearfix">
+                                        <div class="cb-places__date">
+                                            <i class="icon-calendar"></i>
+                                            <span class="cb-places__date-text">с 10 ноября по 20 ноября 2017</span>
+                                        </div>
+
+                                        <div class="cb-places__rating cb-places__rating_top-0">
+                                            <div class="cb-stars-rating">
+                                                <i class="mdi mdi-star active"></i>
+                                                <i class="mdi mdi-star active"></i>
+                                                <i class="mdi mdi-star active"></i>
+                                                <i class="mdi mdi-star"></i>
+                                                <i class="mdi mdi-star"></i>
+                                            </div>
+                                            <div class="cb-places__rating-number">3,1</div>
+                                        </div>
+                                    </div>
 
 
-                        <div class="cb-places__dropdown">
-                           <div class="cb-places__dropdown-body">
-                               <div class="cb-places__dropdown-title">
-                                   Вы точно хотите отменить созданную заявку?
+                                    <div class="clearfix">
+                                        <div class="cb-places__title">Им. 50-летие Октября</div>
+
+                                    </div>
+
+                                    <div class="clearfix">
+                                        <div class="cb-places__text cb-places__text_place">г. Анапа, ул. Лётчика, 4</div>
+                                        <a href="#" class="cb-places__reviews">10 отзывов</a>
+                                    </div>
+
+                                    <table class="cb-table-places">
+                                        <tr class="cb-table-places__header">
+                                            <td>Отдыхающих</td>
+                                            <td rowspan="2">
+                                                <a href="#" class="cb-btn cb-btn_right">Изменить</a>
+                                                <a href="#" class="cb-btn cb-btn_right">Отменить</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td>3 человека</td>
+                                        </tr>
+                                    </table>
+
+
+                                </div>
+                            </div>
+
+
+                            <div class="cb-places__dropdown">
+                               <div class="cb-places__dropdown-body">
+                                   <div class="cb-places__dropdown-title">
+                                       Вы точно хотите отменить созданную заявку?
+                                   </div>
+                                   <div class="cb-places__dropdown-text">
+                                       При отмене созданной заявки, её нельзя будет восстановить.
+                                   </div>
                                </div>
-                               <div class="cb-places__dropdown-text">
-                                   При отмене созданной заявки, её нельзя будет восстановить.
+                               <div class="cb-places__dropdown-buttons">
+                                    <a href="#" class="cb-btn cb-btn_blue">Нет, подумаю</a>
+                                    <a href="#" class="cb-btn cb-btn_white-red">Да, отменить</a>
+                                </div>
+                            </div>
+                        </li>
+
+
+
+                        <li class="cb-places__elem">
+                            <div class="cb-places__tagging cb-places__tagging_paid">Оплачена</div>
+                            <div class="clearfix">
+                                <div class="cb-places__photo" style="background-image: url('../img/photo.png')">
+                                 </div>
+                                <div class="cb-places__info">
+                                    <div class="clearfix">
+                                        <div class="cb-places__date">
+                                            <i class="icon-calendar"></i>
+                                            <span class="cb-places__date-text">с 10 ноября по 20 ноября 2017</span>
+                                        </div>
+
+                                        <div class="cb-places__rating cb-places__rating_top-0">
+                                            <div class="cb-stars-rating">
+                                                <i class="mdi mdi-star active"></i>
+                                                <i class="mdi mdi-star active"></i>
+                                                <i class="mdi mdi-star active"></i>
+                                                <i class="mdi mdi-star"></i>
+                                                <i class="mdi mdi-star"></i>
+                                            </div>
+                                            <div class="cb-places__rating-number">3,1</div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="clearfix">
+                                        <div class="cb-places__title">Им. 50-летие Октября</div>
+
+                                    </div>
+
+                                    <div class="clearfix">
+                                        <div class="cb-places__text cb-places__text_place">г. Светлогорск, ш. Калининградское, д. 72б</div>
+                                        <a href="#" class="cb-places__reviews">10 отзывов</a>
+                                    </div>
+
+                                    <table class="cb-table-places">
+                                        <tr class="cb-table-places__header">
+                                            <td>Отдыхающих</td>
+                                            <td>Цена</td>
+                                            <td rowspan="2"><a href="#" class="cb-btn cb-btn_right cb-btn_blue">Оставить отзыв</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3 человека</td>
+                                            <td>21 256₽</td>
+                                        </tr>
+                                    </table>
+
+
+                                </div>
+                            </div>
+
+                            <div class="cb-places__dropdown">
+                               <div class="cb-places__dropdown-body">
+                                   <div class="cb-places__dropdown-title">
+                                       Вы точно хотите отменить созданную заявку?
+                                   </div>
+                                   <div class="cb-places__dropdown-text">
+                                       При отмене созданной заявки, её нельзя будет восстановить.
+                                   </div>
                                </div>
-                           </div>
-                           <div class="cb-places__dropdown-center">
-                            <a href="#" class="cb-btn cb-btn_blue">Нет, подумаю</a>
-                            <a href="#" class="cb-btn cb-btn_white-red">Да, отменить</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <!-- список мест конец-->
+                               <div class="cb-places__dropdown-buttons">
+                                    <a href="#" class="cb-btn cb-btn_blue">Нет, подумаю</a>
+                                    <a href="#" class="cb-btn cb-btn_white-red">Да, отменить</a>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li class="cb-places__elem">
+                            <div class="cb-places__tagging cb-places__tagging_disapproved">Отклонена</div>
+                            <div class="clearfix">
+                                <div class="cb-places__photo" style="background-image: url('../img/photo.png')">
+                                 </div>
+                                <div class="cb-places__info">
+                                    <div class="clearfix">
+                                        <div class="cb-places__date">
+                                            <i class="icon-calendar"></i>
+                                            <span class="cb-places__date-text">с 10 ноября по 20 ноября 2017</span>
+                                        </div>
+
+                                        <div class="cb-places__rating cb-places__rating_top-0">
+                                            <div class="cb-stars-rating">
+                                                <i class="mdi mdi-star active"></i>
+                                                <i class="mdi mdi-star active"></i>
+                                                <i class="mdi mdi-star active"></i>
+                                                <i class="mdi mdi-star"></i>
+                                                <i class="mdi mdi-star"></i>
+                                            </div>
+                                            <div class="cb-places__rating-number">3,1</div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="clearfix">
+                                        <div class="cb-places__title">Им. 50-летие Октября</div>
+
+                                    </div>
+
+                                    <div class="clearfix">
+                                        <div class="cb-places__text cb-places__text_place">г. Светлогорск, ш. Калининградское, д. 72б</div>
+                                        <a href="#" class="cb-places__reviews">10 отзывов</a>
+                                    </div>
+
+                                    <table class="cb-table-places">
+                                        <tr class="cb-table-places__header">
+                                            <td>Отдыхающих</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>3 человека</td>
+                                        </tr>
+                                    </table>
+
+
+                                </div>
+                            </div>
+
+                            <div class="cb-places__dropdown">
+                               <div class="cb-places__dropdown-body">
+                                   <div class="cb-places__dropdown-title">
+                                       Вы точно хотите отменить созданную заявку?
+                                   </div>
+                                   <div class="cb-places__dropdown-text">
+                                       При отмене созданной заявки, её нельзя будет восстановить.
+                                   </div>
+                               </div>
+                               <div class="cb-places__dropdown-buttons">
+                                    <a href="#" class="cb-btn cb-btn_blue">Нет, подумаю</a>
+                                    <a href="#" class="cb-btn cb-btn_white-red">Да, отменить</a>
+                                </div>
+                            </div>
+                        </li>
+
+
+                       <li class="cb-places__elem">
+                            <div class="cb-places__tagging cb-places__tagging_approved">Одобрена</div>
+                            <div class="clearfix">
+                                <div class="cb-places__photo" style="background-image: url('../img/photo.png')">
+                                 </div>
+                                <div class="cb-places__info">
+                                    <div class="clearfix">
+                                        <div class="cb-places__date">
+                                            <i class="icon-calendar"></i>
+                                            <span class="cb-places__date-text">с 10 ноября по 20 ноября 2017</span>
+                                        </div>
+
+                                        <div class="cb-places__rating cb-places__rating_top-0">
+                                            <div class="cb-stars-rating">
+                                                <i class="mdi mdi-star active"></i>
+                                                <i class="mdi mdi-star active"></i>
+                                                <i class="mdi mdi-star active"></i>
+                                                <i class="mdi mdi-star"></i>
+                                                <i class="mdi mdi-star"></i>
+                                            </div>
+                                            <div class="cb-places__rating-number">3,1</div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="clearfix">
+                                        <div class="cb-places__title">Им. 50-летие Октября</div>
+
+                                    </div>
+
+                                    <div class="clearfix">
+                                        <div class="cb-places__text cb-places__text_place">г. Светлогорск, ш. Калининградское, д. 72б</div>
+                                        <a href="#" class="cb-places__reviews">10 отзывов</a>
+                                    </div>
+
+                                    <table class="cb-table-places">
+                                        <tr class="cb-table-places__header">
+                                            <td>Отдыхающих</td>
+                                            <td rowspan="2"><p>Если вы хотите отменить или изменить <br>заявку свяжитесь с <a href="#">ответственным</a></p></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3 человека</td>
+                                        </tr>
+                                    </table>
+
+
+                                </div>
+                            </div>
+
+                            <div class="cb-places__dropdown">
+                               <div class="cb-places__dropdown-body">
+                                   <div class="cb-places__dropdown-title">
+                                       Вы точно хотите отменить созданную заявку?
+                                   </div>
+                                   <div class="cb-places__dropdown-text">
+                                       При отмене созданной заявки, её нельзя будет восстановить.
+                                   </div>
+                               </div>
+                               <div class="cb-places__dropdown-buttons">
+                                    <a href="#" class="cb-btn cb-btn_blue">Нет, подумаю</a>
+                                    <a href="#" class="cb-btn cb-btn_white-red">Да, отменить</a>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li class="cb-places__elem">
+                            <div class="cb-places__tagging cb-places__tagging_confirmed">Подтверждена</div>
+                            <div class="clearfix">
+                                <div class="cb-places__photo" style="background-image: url('../img/photo.png')">
+                                 </div>
+                                <div class="cb-places__info">
+                                    <div class="clearfix">
+                                        <div class="cb-places__date">
+                                            <i class="icon-calendar"></i>
+                                            <span class="cb-places__date-text">с 10 ноября по 20 ноября 2017</span>
+                                        </div>
+
+                                        <div class="cb-places__rating cb-places__rating_top-0">
+                                            <div class="cb-stars-rating">
+                                                <i class="mdi mdi-star active"></i>
+                                                <i class="mdi mdi-star active"></i>
+                                                <i class="mdi mdi-star active"></i>
+                                                <i class="mdi mdi-star"></i>
+                                                <i class="mdi mdi-star"></i>
+                                            </div>
+                                            <div class="cb-places__rating-number">3,1</div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="clearfix">
+                                        <div class="cb-places__title">Очень длинное название. На столько длинное что сюда не помещается.</div>
+
+                                    </div>
+
+                                    <div class="clearfix">
+                                        <div class="cb-places__text cb-places__text_place">г. Светлогорск, ш. Калининградское, д. 72б</div>
+                                        <a href="#" class="cb-places__reviews">10 отзывов</a>
+                                    </div>
+
+                                    <table class="cb-table-places">
+                                        <tr class="cb-table-places__header">
+                                            <td>Отдыхающих</td>
+                                            <td>Цена</td>
+                                            <td rowspan="2"><a href="#" class="cb-btn cb-btn_right cb-btn_blue">Оставить отзыв</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3 человека</td>
+                                            <td>21 256₽</td>
+                                        </tr>
+                                    </table>
+
+
+                                </div>
+                            </div>
+
+                            <div class="cb-places__dropdown">
+                               <div class="cb-places__dropdown-body">
+                                   <div class="cb-places__dropdown-title">
+                                       Вы точно хотите отменить созданную заявку?
+                                   </div>
+                                   <div class="cb-places__dropdown-text">
+                                       При отмене созданной заявки, её нельзя будет восстановить.
+                                   </div>
+                               </div>
+                               <div class="cb-places__dropdown-buttons">
+                                    <a href="#" class="cb-btn cb-btn_blue">Нет, подумаю</a>
+                                    <a href="#" class="cb-btn cb-btn_white-red">Да, отменить</a>
+                                </div>
+                            </div>
+                        </li>
+
+
+
+                </ul>
+                <!-- список мест конец-->
+            </div>
+
+
         </div>
 
+        <div class="cb-col cb-col-4">
 
-    </div>
+            <!-- Льготные дни-->
+            <div class="cb-days-grace-block">  
 
-    <div class="cb-col cb-col-5">
-
-        <!-- Льготные дни-->
-        <div class="cb-days-grace-block">  
-
-            <h1 class="cb-title">Льготные дни</h1>
-            <a href="#" class="cb-btn cb-btn_white">Подробнее</a>
-            <div class="cb-days-grace">
-                <ul class="cb-days-grace__list">
-                    <li class="cb-days-grace__elem">
-                        <div class="cb-days-grace__info">
-                            <div class="cb-days-grace__name">Кузнецова Анна</div>
-                            <div class="cb-days-grace__comment">
-                                Осталось <i class="mdi mdi-checkbox-blank-circle green"></i> 18 дней из 36,<br> из них <i class="mdi mdi-checkbox-blank-circle orange"></i> 11 в сезон
+                    <h1 class="cb-title cb-title_small">
+                        Льготные дни
+                        <span href="#" class="cb-info-drop">
+                            <span class="mdi mdi-information-outline"></span>
+                            <div class="cb-info-drop__block">
+                                <p>В данном блоке раскрывается информация по количеству льготных дней, оставшихся у Вас и Ваших родственников.</p>
+                                <p>Подробнее про льготы можно прочитать в блоке «<a href="#">Часто задаваемые вопросы</a>»</p>
                             </div>
-                        </div>
-                        <div class="cb-days-grace__schedule">
-                            <div class="cb-days-grace__schedule-elem" style="width: 70%;"></div>
-                            <div class="cb-days-grace__schedule-elem active" style="width: 30%;"></div>
-                        </div>
-                    </li>
-
-                    <li class="cb-days-grace__elem">
-                        <div class="cb-days-grace__info">
-                            <div class="cb-days-grace__name">Кузнецов Генадий — Муж</div>
-                            <div class="cb-days-grace__comment">
-                                Осталось <i class="mdi mdi-checkbox-blank-circle green"></i> 18 дней из 36,<br> из них <i class="mdi mdi-checkbox-blank-circle orange"></i> 11 в сезон
+                        </span>
+                    </h1>
+                    <a href="#" class="cb-btn cb-btn_right cb-btn_white">Подробнее</a>
+                <div class="cb-days-grace">
+                    <ul class="cb-days-grace__list">
+                        <li class="cb-days-grace__elem">
+                            <div class="cb-days-grace__info">
+                                <div class="cb-days-grace__name">Кузнецова Анна</div>
+                                <div class="cb-days-grace__comment">
+                                    Осталось <i class="mdi mdi-checkbox-blank-circle green"></i> 18 дней из 36, из них <i class="mdi mdi-checkbox-blank-circle orange"></i> 11 в сезон
+                                </div>
                             </div>
-                        </div>
-                        <div class="cb-days-grace__schedule">
-                            <div class="cb-days-grace__schedule-elem" style="width: 50%;"></div>
-                            <div class="cb-days-grace__schedule-elem active" style="width: 50%;"></div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>   
+                            <div class="cb-days-grace__schedule">
+                                <div class="cb-days-grace__schedule-elem" style="width: 70%;"></div>
+                                <div class="cb-days-grace__schedule-elem active" style="width: 30%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="cb-days-grace__elem">
+                            <div class="cb-days-grace__info">
+                                <div class="cb-days-grace__name">Кузнецов Генадий — Муж</div>
+                                <div class="cb-days-grace__comment">
+                                    Осталось <i class="mdi mdi-checkbox-blank-circle green"></i> 18 дней из 36, из них <i class="mdi mdi-checkbox-blank-circle orange"></i> 11 в сезон
+                                </div>
+                            </div>
+                            <div class="cb-days-grace__schedule">
+                                <div class="cb-days-grace__schedule-elem" style="width: 50%;"></div>
+                                <div class="cb-days-grace__schedule-elem active" style="width: 50%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>   
             
-        <!-- Льготные дни конец--> 
+            <!-- Льготные дни конец--> 
 
 
-        <!-- Горящие путёвки-->
-        <div class="cb-vouchers  cb-vouchers_mb">  
+            <!-- Горящие путёвки-->
+            <div class="cb-days-grace-block">  
 
-            <h1 class="cb-title">Горящие путёвки <span>58</span></h1>
-            <a href="#" class="cb-btn cb-btn_white">Подписаться</a>
-
-
-            <ul class="cb-vouchers__list"> 
-                <li class="cb-vouchers__elem"> 
-                    <a href="#" class="cb-vouchers__link">
-                        <span class="cb-vouchers__text">Балтийские пески</span>
-                        <span class="cb-vouchers__count">2</span>
-                    </a>
-                </li>
-                <li class="cb-vouchers__elem"> 
-                    <a href="#" class="cb-vouchers__link">
-                        <span class="cb-vouchers__text">Березовая роща</span> 
-                        <span class="cb-vouchers__count">24</span>
-                    </a>
-                </li>
-
-                <li class="cb-vouchers__elem"> 
-                    <a href="#" class="cb-vouchers__link">
-                        <span class="cb-vouchers__text">Бриз</span>
-                        <span class="cb-vouchers__count">24</span>
-                    </a>
-                </li>
-
-                <li class="cb-vouchers__elem"> 
-                    <a href="#" class="cb-vouchers__link">
-                        <span class="cb-vouchers__text">Зеленый бор</span>
-                        <span class="cb-vouchers__count">4</span>
-                    </a>
-                </li>
-
-                <li class="cb-vouchers__elem disabled"> 
-                    <a href="#" class="cb-vouchers__link">
-                        <span class="cb-vouchers__text">Зеленый бор</span>
-                        <span class="cb-vouchers__count">4</span>
-                    </a>
-                </li>
-
-                <li class="cb-vouchers__elem"> 
-                    <a href="#" class="cb-vouchers__link">
-                        <span class="cb-vouchers__text">Им. 50-летие Октября</span>
-                        <span class="cb-vouchers__count">4</span>
-                    </a>
-                </li>
-
-                <li class="cb-vouchers__elem"> 
-                    <a href="#" class="cb-vouchers__link">
-                        <span class="cb-vouchers__text">Зеленый бор</span>
-                        <span class="cb-vouchers__count">4</span>
-                    </a>
-                </li>
-
-                <li class="cb-vouchers__elem"> 
-                    <a href="#" class="cb-vouchers__link">
-                        <span class="cb-vouchers__text">Зеленый бор</span>
-                        <span class="cb-vouchers__count">4</span>
-                    </a>
-                </li>
-
-                <li class="cb-vouchers__elem"> 
-                    <a href="#" class="cb-vouchers__link">
-                        <span class="cb-vouchers__text">Зеленый бор</span>
-                        <span class="cb-vouchers__count">4</span>
-                    </a>
-                </li> 
+                <h1 class="cb-title cb-title_small cb-title_blue">Горящие путёвки</h1>
+                <a href="#" class="cb-btn cb-btn_white">Подписаться</a>
 
 
-                <li class="cb-vouchers__elem"> 
-                    <a href="#" class="cb-vouchers__link">
-                        <span class="cb-vouchers__text">Балтийские пески</span>
-                        <span class="cb-vouchers__count">2</span>
-                    </a>
-                </li>
-                <li class="cb-vouchers__elem"> 
-                    <a href="#" class="cb-vouchers__link">
-                        <span class="cb-vouchers__text">Березовая роща</span>
-                        <span class="cb-vouchers__count">24</span>
-                    </a>
-                </li>
+                <ul class="cb-vouchers__list"> 
+                    <li class="cb-vouchers__elem"> 
+                        <a href="#" class="cb-vouchers__link">
+                            <span class="cb-vouchers__text">Балтийские пески</span>
+                            <span class="cb-vouchers__count">2</span>
+                        </a>
+                    </li>
+                    <li class="cb-vouchers__elem"> 
+                        <a href="#" class="cb-vouchers__link">
+                            <span class="cb-vouchers__text">Березовая роща</span> 
+                            <span class="cb-vouchers__count">24</span>
+                        </a>
+                    </li>
 
-                <li class="cb-vouchers__elem"> 
-                    <a href="#" class="cb-vouchers__link">
-                        <span class="cb-vouchers__text">Бриз</span>
-                        <span class="cb-vouchers__count">24</span>
-                    </a>
-                </li>
+                    <li class="cb-vouchers__elem"> 
+                        <a href="#" class="cb-vouchers__link">
+                            <span class="cb-vouchers__text">Бриз</span>
+                            <span class="cb-vouchers__count">24</span>
+                        </a>
+                    </li>
 
-                <li class="cb-vouchers__elem"> 
-                    <a href="#" class="cb-vouchers__link">
-                        <span class="cb-vouchers__text">Зеленый бор</span>
-                        <span class="cb-vouchers__count">4</span>
-                    </a>
-                </li>
+                    <li class="cb-vouchers__elem"> 
+                        <a href="#" class="cb-vouchers__link">
+                            <span class="cb-vouchers__text">Зеленый бор</span>
+                            <span class="cb-vouchers__count">4</span>
+                        </a>
+                    </li>
 
-                <li class="cb-vouchers__elem"> 
-                    <a href="#" class="cb-vouchers__link">
-                        <span class="cb-vouchers__text">Зеленый бор</span>
-                        <span class="cb-vouchers__count">4</span>
-                    </a>
-                </li>
+                    <li class="cb-vouchers__elem disabled"> 
+                        <a href="#" class="cb-vouchers__link">
+                            <span class="cb-vouchers__text">Зеленый бор</span>
+                            <span class="cb-vouchers__count">4</span>
+                        </a>
+                    </li>
 
-                <li class="cb-vouchers__elem"> 
-                    <a href="#" class="cb-vouchers__link">
-                        <span class="cb-vouchers__text">Им. 50-летие Октября</span>
-                        <span class="cb-vouchers__count">4</span>
-                    </a>
-                </li>
+                    <li class="cb-vouchers__elem"> 
+                        <a href="#" class="cb-vouchers__link">
+                            <span class="cb-vouchers__text">Им. 50-летие Октября</span>
+                            <span class="cb-vouchers__count">4</span>
+                        </a>
+                    </li>
 
-                <li class="cb-vouchers__elem"> 
-                    <a href="#" class="cb-vouchers__link">
-                        <span class="cb-vouchers__text">Зеленый бор</span>
-                        <span class="cb-vouchers__count">4</span>
-                    </a>
-                </li>
+                    <li class="cb-vouchers__elem"> 
+                        <a href="#" class="cb-vouchers__link">
+                            <span class="cb-vouchers__text">Зеленый бор</span>
+                            <span class="cb-vouchers__count">4</span>
+                        </a>
+                    </li>
 
-                <li class="cb-vouchers__elem"> 
-                    <a href="#" class="cb-vouchers__link">
-                        <span class="cb-vouchers__text">Зеленый бор</span>
-                        <span class="cb-vouchers__count">4</span>
-                    </a>
-                </li>
+                    <li class="cb-vouchers__elem"> 
+                        <a href="#" class="cb-vouchers__link">
+                            <span class="cb-vouchers__text">Зеленый бор</span>
+                            <span class="cb-vouchers__count">4</span>
+                        </a>
+                    </li>
 
-                <li class="cb-vouchers__elem"> 
-                    <a href="#" class="cb-vouchers__link">
-                        <span class="cb-vouchers__text">Зеленый бор</span>
-                        <span class="cb-vouchers__count">4</span>
-                    </a>
-                </li> 
-            </ul>
-        </div> 
-        <!-- Горячие путевки конец--> 
+                    <li class="cb-vouchers__elem"> 
+                        <a href="#" class="cb-vouchers__link">
+                            <span class="cb-vouchers__text">Зеленый бор</span>
+                            <span class="cb-vouchers__count">4</span>
+                        </a>
+                    </li> 
 
+
+                    <li class="cb-vouchers__elem"> 
+                        <a href="#" class="cb-vouchers__link">
+                            <span class="cb-vouchers__text">Балтийские пески</span>
+                            <span class="cb-vouchers__count">2</span>
+                        </a>
+                    </li>
+                    <li class="cb-vouchers__elem"> 
+                        <a href="#" class="cb-vouchers__link">
+                            <span class="cb-vouchers__text">Березовая роща</span>
+                            <span class="cb-vouchers__count">24</span>
+                        </a>
+                    </li>
+
+                    <li class="cb-vouchers__elem"> 
+                        <a href="#" class="cb-vouchers__link">
+                            <span class="cb-vouchers__text">Бриз</span>
+                            <span class="cb-vouchers__count">24</span>
+                        </a>
+                    </li>
+
+                    <li class="cb-vouchers__elem"> 
+                        <a href="#" class="cb-vouchers__link">
+                            <span class="cb-vouchers__text">Зеленый бор</span>
+                            <span class="cb-vouchers__count">4</span>
+                        </a>
+                    </li>
+
+                    <li class="cb-vouchers__elem"> 
+                        <a href="#" class="cb-vouchers__link">
+                            <span class="cb-vouchers__text">Зеленый бор</span>
+                            <span class="cb-vouchers__count">4</span>
+                        </a>
+                    </li>
+
+                    <li class="cb-vouchers__elem"> 
+                        <a href="#" class="cb-vouchers__link">
+                            <span class="cb-vouchers__text">Им. 50-летие Октября</span>
+                            <span class="cb-vouchers__count">4</span>
+                        </a>
+                    </li>
+
+                    <li class="cb-vouchers__elem"> 
+                        <a href="#" class="cb-vouchers__link">
+                            <span class="cb-vouchers__text">Зеленый бор</span>
+                            <span class="cb-vouchers__count">4</span>
+                        </a>
+                    </li>
+
+                    <li class="cb-vouchers__elem"> 
+                        <a href="#" class="cb-vouchers__link">
+                            <span class="cb-vouchers__text">Зеленый бор</span>
+                            <span class="cb-vouchers__count">4</span>
+                        </a>
+                    </li>
+
+                    <li class="cb-vouchers__elem"> 
+                        <a href="#" class="cb-vouchers__link">
+                            <span class="cb-vouchers__text">Зеленый бор</span>
+                            <span class="cb-vouchers__count">4</span>
+                        </a>
+                    </li> 
+                </ul>
+            </div> 
+            <!-- Горячие путевки конец--> 
+
+        </div>
     </div>
+
 </div>
-
-
 
 
 

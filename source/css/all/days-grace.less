@@ -1,7 +1,7 @@
 .cb-days-grace {
 	&-block {
-		padding: 40px 45px;
-	    margin-bottom: 75px;
+		padding: 30px 20px;
+	    margin-bottom: 20px;
 	    background: white;
 	    border-radius: 4px;
 	    position: relative;
@@ -9,8 +9,8 @@
 
 	    .cb-btn {
 		    position: absolute;
-		    top: 34px;
-		    right: 40px;
+		    top: 25px;
+		    right: 15px;
 		}
 	}
 
@@ -28,8 +28,6 @@
 		font-family: Arial;
 		font-size: 17px;
 		line-height: 1.65;
-		float: left;
-		width: 50%;
 		color: @black;
 		overflow: hidden;
     	text-overflow: ellipsis;
@@ -39,15 +37,13 @@
 	&__comment {
 		color: @black;
 		font-size: 14px;
-		text-align: right;
-		float: right;
-		width: 50%;
 		line-height: 1.5;
+		margin-bottom: 10px;
 		
 		
 		.mdi {
 			position: relative;
-			top: -3px;
+			top: -1px;
 			font-size: 7px;
 			
 			&.green {
@@ -72,6 +68,16 @@
 			border: 1px solid @gray;
 	        border-radius: 20px;
 	        margin-bottom: 20px;
+	        
+	        &:first-child {
+      	        border-radius: 20px 0 0 20px;
+      	        border-right: 0px;
+	        }
+
+	        &:last-child {
+      	        border-radius: 0 20px 20px 0;
+      	        border-left: 0px;
+	        }
 	        
 	        &.active {
 	        	

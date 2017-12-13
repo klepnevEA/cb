@@ -145,6 +145,10 @@
 		margin-bottom: 40px;
 	}
 
+	&_ml-20 {
+		margin-left: 20px;
+	}
+
 	&_margin-25-40-0-0 {
 		margin: 25px 40px 0 0;
 	}
@@ -195,10 +199,21 @@
 		display: inline-block;
 		position: relative;
 		padding: 9px 10px;
+		width: 41px;
+		height: 41px;
+		
+		&:hover {
+			span {	
+				&:before {
+					color: @red;
+				}
+				
+			}
+		}
 
 	
-		.mdi {
-			font-size: 25px;
+		span {
+			font-size: 20px;
 			line-height: 20px;
 		}
 	}

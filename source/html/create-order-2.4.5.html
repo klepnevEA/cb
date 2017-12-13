@@ -10,55 +10,7 @@
 
 
 	<div class="cb-block-pading cb-block-pading_white">
-		<div class="cb-row">
-			<div class="cb-col cb-col-12">
-
-				<div class="cb-filter-checkbox cb-filter-checkbox_left">
-					<ui class="cb-filter-checkbox__list">
-						<li class="cb-filter-checkbox__elem cb-filter-checkbox__elem_arrow-right">
-							<a  class="cb-filter-checkbox__link cb-filter-checkbox__link_created cb-filter-checkbox__link_border" href="#">
-								<span class="cb-filter-checkbox__text">Создана</span>
-							</a>
-						</li>
-						<li class="cb-filter-checkbox__elem cb-filter-checkbox__elem_arrow-right">
-							<a  class="cb-filter-checkbox__link cb-filter-checkbox__link_approved cb-filter-checkbox__link_active" href="#">
-								<span class="cb-filter-checkbox__text">Одобрена</span>
-							</a>
-						</li>
-						<li class="cb-filter-checkbox__elem cb-filter-checkbox__elem_arrow-right">
-							<a  class="cb-filter-checkbox__link cb-filter-checkbox__link_reserved " href="#">
-								<span class="cb-filter-checkbox__text">Забронирована</span>
-							</a>
-						</li>
-						<li class="cb-filter-checkbox__elem cb-filter-checkbox__elem_arrow-right">
-							<a  class="cb-filter-checkbox__link cb-filter-checkbox__link_calculated" href="#">
-								<span class="cb-filter-checkbox__text">Рассчитана</span>
-							</a>
-						</li>
-						<li class="cb-filter-checkbox__elem cb-filter-checkbox__elem_arrow-right">
-							<a  class="cb-filter-checkbox__link cb-filter-checkbox__link_confirmed" href="#">
-								<span class="cb-filter-checkbox__text">Подтверждена</span>
-							</a>
-						</li>
-						<li class="cb-filter-checkbox__elem">
-							<a  class="cb-filter-checkbox__link cb-filter-checkbox__link_paid" href="#">
-								<span class="cb-filter-checkbox__text">Оплачена</span>
-							</a>
-						</li>
-						<li class="cb-filter-checkbox__elem">
-							<a  class="cb-filter-checkbox__link cb-filter-checkbox__link_disapproved" href="#">
-								<span class="cb-filter-checkbox__text">Отклонена</span>
-							</a>
-						</li>
-
-					</ui>
-				</div>
-			</div>
-
-
-
-		</div>
-
+		
 		<div class="cb-row">
 			<div class="cb-col cb-col-12">
 				<div class="cb-title cb-title_small cb-title_mb-15">Выбрать место и период отдыха</div>
@@ -135,7 +87,7 @@
 						<li class="cb-rest-list__elem">
 							<div class="cb-rest-list__info">
 								<a href="#" class="cb-rest-list__name">
-									Наумов Денис Александрович
+									Человек с самым длинным именем фамилией и отчеством на земле
 									<span class="cb-rest-list__marker">это вы</span>
 								</a>
 								<div class="cb-rest-list__status">Муж, 25 лет</div>
@@ -148,7 +100,7 @@
 						<li class="cb-rest-list__elem">
 							<div class="cb-rest-list__info">
 								<a href="#" class="cb-rest-list__name">
-									Наумов Денис Александрович
+									Человек с самым длинным именем фамилией и отчеством на земле
 									<span class="cb-rest-list__marker">это вы</span>
 								</a>
 								<div class="cb-rest-list__status">Муж, 25 лет</div>
@@ -161,7 +113,7 @@
 						<li class="cb-rest-list__elem">
 							<div class="cb-rest-list__info">
 								<a href="#" class="cb-rest-list__name">
-									Наумов Денис Александрович
+									Человек с самым длинным именем фамилией и отчеством на земле
 									<span class="cb-rest-list__marker">это вы</span>
 								</a>
 								<div class="cb-rest-list__status">Муж, 25 лет</div>
@@ -174,7 +126,7 @@
 						<li class="cb-rest-list__elem">
 							<div class="cb-rest-list__info">
 								<a href="#" class="cb-rest-list__name">
-									Наумов Денис Александрович
+									Человек с самым длинным именем фамилией и отчеством на земле
 									<span class="cb-rest-list__marker">это вы</span>
 								</a>
 								<div class="cb-rest-list__status">Муж, 25 лет</div>
@@ -184,11 +136,42 @@
 								<button class="cb-btn cb-btn_icon-round"><span class="icon-pencil"></span></button>
 							</div>
 						</li>
+						
 					</ul>
 
 					<div class="cb-container-block__footer">
-						<div class="cb-title b-title_mb-0 cb-title_small">Не нашли знакомого в списке?</div>
-						<button class="cb-btn cb-btn_right cb-btn_blue">Добавить</button>
+						<button class="cb-btn ">Выйти без изменений</button>
+						<button class="cb-btn cb-btn_right cb-btn_blue">Сохранить изменения</button>
+						<div class="cb-container-block__footer-dropdown">
+							<a href="#" class="cb-container-block__footer-dropdown-close">
+								<span class="mdi mdi-close"></span>
+							</a>
+							<div class="cb-row">
+								<div class="cb-col cb-col-12">
+									<div class="cb-title cb-title_mb-15 cb-title_small">Отредактировать данные знакомого</div>
+									<input type="text" class="cb-input" />
+								</div>
+
+							</div>
+
+							<div class="cb-row">
+								<div class="cb-col cb-col-8">
+									<select tabindex="4" class="cb-dropdown">
+										<option value="" class="label" value="">Степень родства</option>
+										<option value="1">Степень родства 1</option>
+										<option value="2">Степень родства 2</option>
+										<option value="2">Степень родства 20</option>
+										<option value="2">Степень родства 100 </option>
+									</select>
+
+									<div class="cb-calendar cb-calendar__icon">
+										<div class="cb-calendar__text">Дата рождения:</div>
+										<input type="text"	class="cb-calendar__input cb-calendar__input_transparent datepicker-here" data-multiple-dates-separator=", "/>
+									</div>
+								</div>
+								<div class="cb-col cb-col-4"></div>
+							</div>
+						</div>
 					</div>
 				</div> 
 
@@ -197,91 +180,11 @@
 			<div class="cb-col cb-col-6">
 				<div class="cb-text cb-text_bold">Едут отдыхать</div>
 				<div class="cb-container-block cb-container-block_mb-5 cb-container-block_padding-15 cb-container-block_border-gray">
-					<ul class="cb-rest-list">
-						<li class="cb-rest-list__elem">
-							<div class="cb-rest-list__info">
-								<a href="#" class="cb-rest-list__name">
-									Человек с самым длинным именем фамилией и отчеством на земле
-									<span class="cb-rest-list__marker">это вы</span>
-								</a>
-								<div class="cb-rest-list__status">Вообще не известно кто это. Какойто родственник наверное! 25 лет</div>
-							</div>
-							<div class="cb-rest-list__buttons">
-								<button class="cb-btn">Удалить</button>
-							</div>
-						</li>
-						<li class="cb-rest-list__elem">
-							<div class="cb-rest-list__info">
-								<a href="#" class="cb-rest-list__name">
-									Наумов Денис Александрович
-									<span class="cb-rest-list__marker">это вы</span>
-								</a>
-								<div class="cb-rest-list__status">Муж, 25 лет</div>
-							</div>
-							<div class="cb-rest-list__buttons">
-								<button class="cb-btn">Удалить</button>
-							</div>
-						</li>
-						<li class="cb-rest-list__elem">
-							<div class="cb-rest-list__info">
-								<a href="#" class="cb-rest-list__name">
-									Наумов Денис Александрович
-									<span class="cb-rest-list__marker">это вы</span>
-								</a>
-								<div class="cb-rest-list__status">Муж, 25 лет</div>
-							</div>
-							<div class="cb-rest-list__buttons">
-								<button class="cb-btn">Удалить</button>
-							</div>
-						</li>
-						<li class="cb-rest-list__elem">
-							<div class="cb-rest-list__info">
-								<a href="#" class="cb-rest-list__name">
-									Наумов Денис Александрович
-									<span class="cb-rest-list__marker">это вы</span>
-								</a>
-								<div class="cb-rest-list__status">Муж, 25 лет</div>
-							</div>
-							<div class="cb-rest-list__buttons">
-								<button class="cb-btn">Удалить</button>
-							</div>
-						</li>
-						<li class="cb-rest-list__elem">
-							<div class="cb-rest-list__info">
-								<a href="#" class="cb-rest-list__name">
-									Наумов Денис Александрович
-									<span class="cb-rest-list__marker">это вы</span>
-								</a>
-								<div class="cb-rest-list__status">Муж, 25 лет</div>
-							</div>
-							<div class="cb-rest-list__buttons">
-								<button class="cb-btn">Удалить</button>
-							</div>
-						</li>
-						<li class="cb-rest-list__elem">
-							<div class="cb-rest-list__info">
-								<a href="#" class="cb-rest-list__name">
-									Наумов Денис Александрович
-									<span class="cb-rest-list__marker">это вы</span>
-								</a>
-								<div class="cb-rest-list__status">Муж, 25 лет</div>
-							</div>
-							<div class="cb-rest-list__buttons">
-								<button class="cb-btn">Удалить</button>
-							</div>
-						</li>
-						<li class="cb-rest-list__elem">
-							<div class="cb-rest-list__info">
-								<a href="#" class="cb-rest-list__name">
-									Наумов Денис Александрович
-									<span class="cb-rest-list__marker">это вы</span>
-								</a>
-								<div class="cb-rest-list__status">Муж, 25 лет</div>
-							</div>
-							<div class="cb-rest-list__buttons">
-								<button class="cb-btn">Удалить</button>
-							</div>
-						</li>
+					<ul class="cb-rest-list cb-rest-list_min-height">
+						<div class="cb-rest-list__empty">
+							<div class="cb-rest-list__empty-title">Список пуст</div>
+							<div class="cb-rest-list__empty-text"><span class="icon-arrow"></span> Выберите компанию для поездки</div>
+						</div>
 					</ul>
 				</div>
 			</div>               
@@ -298,9 +201,7 @@
 
 		<div class="cb-row">
 			<div class="cb-col cb-col-12">
-				<button class="cb-btn cb-btn_right">Отменить заявку</button>
-				<button class="cb-btn cb-btn_right cb-btn_blue">Выйти без изменений</button>
-				<button class="cb-btn cb-btn_right cb-btn_disabled">Сохранить изменения</button>
+				<button class="cb-btn cb-btn_right cb-btn_blue">Отправить</button>
 			</div>
 		</div>
 	</div>

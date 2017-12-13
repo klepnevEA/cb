@@ -114,6 +114,19 @@
 			font-size: 21px;
 			color: @gray;
 			white-space: nowrap;
+			
+			.icon-arrow {
+				position: relative;
+				display: inline-block;
+				width: 25px;
+				height: 18px;
+				&:before {
+					position: absolute;
+					color: @gray;
+					transform: rotate(180deg);left: 0px;
+				}
+				
+			}
 		}
 	}
 }

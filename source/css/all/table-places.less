@@ -1,6 +1,6 @@
 .cb-table-places {
 	width: 100%;
-
+	border-collapse: collapse;
 
 
 	&__body {
@@ -14,6 +14,21 @@
 		text-align: left;
 		padding: 0 10px 0 0;
 		color: @blue;
+		
+		&:last-child {
+			padding: 0;
+		}
+
+		p {
+			font-weight: normal;
+			font-size: 12px;
+			padding-top: 5px;
+			text-align: right;
+			
+			a {
+				color: @blue;
+			}
+		}
 		
 	}
 

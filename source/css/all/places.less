@@ -1,12 +1,35 @@
 .cb-places {
-	padding-left: 40px;
+	margin-left: 40px;
+	
+	&_ml-0 {
+		margin-left: 0;
+	}
+	
 	&__elem {
-		.clearfix;
+		position: relative;
 		background-color: #fff;
 		margin-bottom: @sp;
 		//height: 210px;
 		border-radius: 4px;
 		overflow: hidden;
+		
+		&_created {
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				border-radius: 4px;
+				background-color: rgba(255,255,255,0.5);
+				z-index: 100;
+			}
+
+			.cb-places__dropdown {
+				display: block;
+			}
+		}
 	}
 
 	&__photo {
@@ -125,6 +148,22 @@
 		&_created {
 			background-color: @created;
 		}
+
+		&_paid {
+			background-color: @paid;
+		}
+
+		&_disapproved {
+			background-color: @disapproved;
+		}
+
+		&_approved {
+			background-color: @approved;
+		}
+
+		&_confirmed {
+			background-color: @confirmed;
+		}
 	}
 
 	&__date {
@@ -149,27 +188,33 @@
 
 	&__dropdown {
 		.clearfix;
-		padding: 30px;
+		display: none;
+		padding: 30px 20px;
 		border-radius: 0 0 4px 4px;
 		border: solid 1px #bdbfc5;
+		z-index: 2000;
 		
 		&-title {
-			font-size: 21px;
+			font-size: 14px;
+			font-weight: bold;
 			color: @black;
 			margin-bottom: 10px;
 		}
 
 		&-text {
-			font-size: 17px;
+			font-size: 14px;
 			color: @black;
 		}
 
 		&-body {
-			margin-bottom: 20px;
+			display: inline-block;
+			float: left;
 		}
 
-		&-center {
-			text-align: center;
+		&-buttons {
+			display: inline-block;
+			float: left;
+			text-align: right;
 			
 			.cb-btn {
 				margin: 0 5px;
