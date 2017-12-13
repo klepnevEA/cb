@@ -129,7 +129,11 @@ $(document).ready(function() {
 
 
 
-
+	$('.cb-dropdown-list-doc__btn').on('click', function(e) {
+		e.preventDefault();
+		console.log('!!!');
+		$(this).closest('.cb-dropdown-list-doc').toggleClass('cb-dropdown-list-doc_active');
+	});
   
 	
 }); 

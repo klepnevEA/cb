@@ -1,0 +1,66 @@
+.cb-dropdown-list-doc {
+	&__btn {
+		display: inline-block;
+		color: @blue;
+		font-size: 17px;
+		padding: 10px 0 15px;
+	}
+
+	&__list {
+		overflow: hidden;
+		max-height: 0px;
+	}
+
+	&__elem {
+		.clearfix;
+		padding-bottom: 10px;
+	}
+
+
+	&__icon {
+		float: left;
+		font-size: 40px;
+		margin-right: 5px;
+	}
+
+	&__info {
+		float: left;
+		width: calc(~'100% - 45px');
+	}
+
+	&__text {
+		display: inline-block;
+		color: @black;
+		margin-bottom: 5px;
+		font-size: 14px;
+		
+		&_link {
+			color: @blue;
+			
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&__comment {
+		color: @gray;
+		font-size: 14px;
+	}
+
+	&_active {
+		.cb-dropdown-list-doc {
+			&__list {
+				max-height: 10000px;
+			}
+
+			&__btn {
+				.mdi {
+					&:before {
+						transform: rotate(90deg);
+					}
+				}
+			}
+		}
+	}
+}
