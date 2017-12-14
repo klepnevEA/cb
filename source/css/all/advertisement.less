@@ -1,0 +1,33 @@
+.cb-advertisement {
+
+	&:hover {
+		.cb-advertisement {
+			&__text {
+				color: @blue;
+			}
+		}
+	}
+	&__text {
+		position: relative;
+		font-size: 14px;
+		color: @black;
+		line-height: 1.43;
+		margin-bottom: 10px;
+		overflow: hidden;
+		max-height: 80px;
+		
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 100px;
+			height: 20px;
+
+			background: -webkit-linear-gradient(left, rgba(242,243,243,0) 0%, rgba(242,243,243,0) 1%, rgba(242,243,243,1) 100%);
+			background: -o-linear-gradient(left, rgba(242,243,243,0) 0%, rgba(242,243,243,0) 1%, rgba(242,243,243,1) 100%);
+			background: linear-gradient(to right, rgba(242,243,243,0) 0%, rgba(242,243,243,0) 1%, rgba(242,243,243,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f3f3', endColorstr='#f2f3f3',GradientType=1 ); /* IE6-9 */
+		}
+	}
+}
