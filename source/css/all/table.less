@@ -45,16 +45,12 @@
 		border-radius: 4px;
 		border: 1px solid @gray;
 		padding: 8px 20px;
-		
-		td {
-			width: 10%;
-			&:first-child {
-				width: 20%;
-			}
-		}
-		
-
 	}
+
+	// &__checkbox-title {
+	// 	border-bottom: 1px solid @gray;
+	// 	padding-top: 20px;
+	// }
 
 	&_mb-30 {
 		margin-bottom: 30px;
@@ -100,6 +96,23 @@
 		.mdi {
 			color: @gray;
 		}
+	}
+
+	&_checkbox-list {
+		width: 100%;
+		.cb-table {
+			&__checkbox-title {
+				border-bottom: 1px solid @gray;
+				padding-top: 20px;
+			}
+
+			
+		}
+
+		tr td{
+				padding: 10px;
+				padding-top: 20px;
+			}
 	}
 
 }
